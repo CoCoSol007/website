@@ -1,0 +1,7 @@
+{
+    "Uptime Kuma": {
+        "link": "https://up.cocosol.fr/",
+        "description": "C'est un outil de surveillance auto-hébergé de serveurs. Il peut être configuré pour envoyer des alertes.",
+        "logo": "/services/icons/upkuma.svg"
+    }
+}

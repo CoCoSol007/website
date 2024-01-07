@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>CoCoSol - About Me</title>
+</head>
+
+<body class="bg-gray-800 text-white">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-900 p-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <!-- Logo -->
+            <img src="assets/logo.svg" alt="Your Logo" class="h-8 w-8">
+
+            <!-- Site Name -->
+            <a href="#" class="font-bold text-lg">CoCoSol</a>
+        </div>
+    </nav>
+
+    <!-- "About Me" Section -->
+    <section class="container mx-auto my-10 p-8 bg-gray-700 rounded-lg shadow-md">
+        <h1 class="text-4xl font-bold mb-6">About Me</h1>
+        <div class="flex flex-col md:flex-row items-center">
+            <img src="assets/logo.svg" alt="Profile" class="rounded-lg w-full md:w-1/3 mb-4 md:mb-0">
+            <div class="md:w-2/3 md:ml-8">
+                <!-- "Whoami?" Section -->
+                <h1 class="text-3xl font-bold mb-4 text-center">Whoami ?</h1>
+                <br><br>
+                Hello World ! <br>
+
+                My name is <u>CoCoSol</u>. <br>
+                I am <span id="ageYears" class="text-red-500"></span> years, <span id="ageMonths"
+                    class="text-red-500"></span> months, and <span id="ageDays" class="text-red-500"></span> days old.
+                <br>
+                I am a French coder<br>
+                with not much experience but a strong desire <br>
+                to <span class="text-2xl font-bold text-red-500">learn</span>.<br>
+                <br>
+                I'm passionate about development, math, and coding.</p>
+
+                <p>I'm currently a student at <strong class="text-blue-500">Caousou</strong> in France, and I'm always
+                    looking for new challenges.</p>
+
+                <p>Feel free to check out my <a href="projects.html"
+                        class="text-blue-500 hover:text-blue-700">projects</a>
+                </p>
+
+                <p>If you want to know more about me or have any questions, you can contact me at
+                    <strong class="text-blue-500">contact@cocosol.fr</strong>.
+                </p>
+
+
+
+                <!-- Contact Me Section with Button -->
+                <section class="mt-8">
+                    <h2 class="text-2xl font-bold mb-4">Contact Me</h2>
+                    <p>Click the button below to contact me:</p>
+                    <br>
+                    <a href="mailto:contact@cocosol.fr"
+                        class="bg-blue-500 text-white px-4 py-2 rounded-md inline-block">Contact CoCoSol</a>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Home Page -->
+    <div class="container mx-auto text-center">
+        <a href="index.html" class="bg-blue-500 text-white px-4 py-2 rounded-full mt-8 inline-block">Back to Home</a>
+    </div>
+
+    <script>
+        // Calculate age dynamically
+        var birthdate = new Date('2007-10-29');
+        var today = new Date();
+
+        var ageInMilliseconds = today - birthdate;
+
+        // Calculate age in years, months, and days
+        var ageInYears = Math.floor(ageInMilliseconds / (365.25 * 24 * 60 * 60 * 1000));
+        var ageInMonths = Math.floor(ageInMilliseconds % (365.25 * 24 * 60 * 60 * 1000) / (30.44 * 24 * 60 * 60 * 1000));
+        var ageInDays = Math.floor(ageInMilliseconds % (30.44 * 24 * 60 * 60 * 1000) / (24 * 60 * 60 * 1000));
+
+        // Update the age in the HTML
+        document.getElementById('ageYears').innerText = ageInYears;
+        document.getElementById('ageMonths').innerText = ageInMonths;
+        document.getElementById('ageDays').innerText = ageInDays;
+    </script>
+</body>
+
+</html>
