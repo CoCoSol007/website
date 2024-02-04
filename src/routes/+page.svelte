@@ -47,14 +47,14 @@
 <div class="container mx-auto my-8 flex flex-wrap justify-center">
     {#each services as service}
         <div
-            class="w-full max-w-sm bg-white m-4 rounded-lg shadow dark:bg-gray-700 dark:border-gray-600"
+            class="w-full max-w-sm bg-white m-4 rounded-lg shadow dark:bg-gray-700 dark:border-gray-600 flex flex-col"
         >
             <img
                 src="/api/get-images?path={service.link_img}"
                 alt="logo"
                 class="rounded-t-lg h-40 w-full pt-4 object-contain"
             />
-            <div class="p-5">
+            <div class="flex-1 p-5">
                 <h5
                     class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
                 >
@@ -65,13 +65,13 @@
                 >
                     {service.description}
                 </article>
-                <a
-                    href={service.link}
-                    class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
-                    Check it out
-                </a>
             </div>
+            <a
+                href={service.link}
+                class="mb-0 inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-b-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+                Check it out
+            </a>
         </div>
     {/each}
 </div>
