@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Casino Dingo",
+        "description": "Casino Dingo is a 2D game developed using the Godot engine. ",
+        "link": "https://github.com/CoCoSol007/casino-dingo",
+        "link_img": "1.png"
+    },
+    {
+        "title": "Arcade Game",
+        "description": "Arcade is a litle retro game made with python and pygame. We made this game in 2021",
+        "link": "https://github.com/CoCoSol007/arcade",
+        "link_img": "2.png"
+    },
+    {
+        "title": "Nano 3D renderer",
+        "description": "It's a simple 3d rederer made in python with pygame and math",
+        "link": "https://github.com/CoCoSol007/simple-3D-renderer",
+        "link_img": "3.png"
+    },
+    {
+        "title": "My Website",
+        "description": "This is the code of the website you a curently looking",
+        "link": "https://github.com/CoCoSol007/website",
+        "link_img": "4.svg"
+    }
+]
