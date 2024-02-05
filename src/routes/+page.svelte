@@ -90,20 +90,13 @@
             <p
                 class="max-w-lg mt-3 text-xl leading-relaxed text-gray-50 md:mt-8"
             >
-                Hello World ! <br />
-                My name is <u>CoCoSol</u>. I am 16 years old.<br />
-                I am a French coder with not much experience but a strong desire
-                to
-                <span class="text-2xl font-bold text-red-500">learn</span>.<br
-                />
-                I'm passionate about development and math. I'm currently a student
-                at
+                Hello World ! <br/>
+                My name is CoCoSol and I am a 16-year-old French coder with a strong desire to learn.<br/>
+                Although I do not have much experience, I am passionate about development and math. Currently, I am a student at
                 <a href="https://www.caousou.com/" class="text-blue-500"
                     >Caousou</a
                 >
-                in France, and I'm always looking for new challenges. If you want
-                to know more about me or have any questions, you can contact me at
-                <strong class="text-red-500">contact@cocosol.fr</strong>.
+                in France and I am always seeking new challenges. <br/> To contact me or ask any questions, please email me at contact@cocosol.fr.
             </p>
         </div>
         <div class="md:w-1/2 relative">
