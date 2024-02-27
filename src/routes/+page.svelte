@@ -28,12 +28,12 @@
                 class="w-2/3 flex flex-col justify-between p-4 leading-normal text-white"
             >
                 <h5
-                    class="mb-2 h-1/3 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                    class="mb-2 h-1/3 text-2xl font-bold tracking-tight text-gray-900 text-white"
                 >
                     {project.title}
                 </h5>
                 <article
-                    class="mb-3 h-2/3 font-normal text-gray-700 dark:text-gray-400 text-wrap"
+                    class="mb-3 h-2/3 font-normal text-gray-400 text-wrap"
                 >
                     {project.description}
                 </article>
@@ -47,7 +47,7 @@
 <div class="container mx-auto my-8 flex flex-wrap justify-center">
     {#each services as service}
         <div
-            class="w-full max-w-sm bg-white m-4 rounded-lg shadow dark:bg-gray-700 dark:border-gray-600 flex flex-col"
+            class="w-full max-w-sm m-4 rounded-lg shadow bg-gray-700 border-gray-600 flex flex-col"
         >
             <img
                 src="/api/get-images?path={service.link_img}"
@@ -56,19 +56,19 @@
             />
             <div class="flex-1 p-5">
                 <h5
-                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                    class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-white"
                 >
                     {service.title}
                 </h5>
                 <article
-                    class="mb-3 font-normal text-gray-700 dark:text-gray-400"
+                    class="mb-3 font-normal text-gray-400 text-gray-400"
                 >
                     {service.description}
                 </article>
             </div>
             <a
                 href={service.link}
-                class="mb-0 inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-b-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                class="mb-0 inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-b-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
             >
                 Check it out
             </a>

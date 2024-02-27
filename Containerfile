@@ -1,20 +1,27 @@
-FROM node:20-alpine
+FROM node:lts-alpine AS build
 
 WORKDIR /app
 
-COPY package-lock.json .
 COPY package.json .
-COPY svelte.config.js .
-COPY postcss.config.js .
-COPY vite.config.js .
-COPY tailwind.config.js .
+COPY package-lock.json .
 
-RUN npm install -g npm@10.4.0
-RUN npm install
+RUN npm ci
 
-COPY ./src ./src
-COPY ./static ./static
+COPY . .
 
 RUN npm run build
 
-CMD ["node", "build/index.js"]
+FROM node:lts-alpine
+
+WORKDIR /app
+
+COPY package.json .
+COPY package-lock.json .
+
+RUN npm ci --omit dev
+
+COPY --from=build /app/build ./build
+
+EXPOSE 3000
+
+CMD ["node", "build"]
