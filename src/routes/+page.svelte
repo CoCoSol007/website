@@ -11,12 +11,12 @@
   {#each projects as project}
     <a
       href={project.link}
-      class="flex flex-row m-5 w-full md:w-1/2 lg:w-1/3 px-4 mb-4 duration-300 hover:bg-gray-600 hover:scale-105 bg-gray-700 p-6 rounded-lg shadow-md"
+      class="flex flex-row m-5 w-full lg:w-1/3 px-4 mb-4 duration-300 hover:bg-gray-600 hover:scale-105 bg-gray-700 p-6 rounded-lg shadow-md"
     >
       <img
         src={project.link_img}
         alt="logo"
-        class="w-1/3 h-40 object-contain mb-4"
+        class="w-1/3 h-40 object-contain mb-4 rounded-lg"
       />
       <div
         class="w-2/3 flex flex-col justify-between p-4 leading-normal text-white"
@@ -79,13 +79,15 @@
       </h2>
       <p class="max-w-lg mt-3 text-xl leading-relaxed text-gray-50 md:mt-8">
         Hello World ! <br />
-        My name is CoCoSol and I am a 16-year-old French coder with a strong desire
+        My name is CoCoSol and I am a 17-year-old French coder with a strong desire
         to learn.<br />
         Although I do not have much experience, I am passionate about development
         and math. Currently, I am a student at
         <a href="https://www.caousou.com/" class="text-blue-500">Caousou</a>
-        in France and I am always seeking new challenges. <br /> To contact me or
-        ask any questions, please email me at contact@cocosol.fr.
+        in France and I am always seeking new challenges. <br /> To contact me
+        or ask any questions, please email me at contact@cocosol.fr. <br /><br
+        />
+        PS: I love rust and I hate python and javascript.
       </p>
     </div>
     <div class="md:w-1/2 relative">
