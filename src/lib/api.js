@@ -35,7 +35,7 @@ export function fetchProjects() {
             },
         
     ]
-    return JSON.parse(JSON.stringify(projects))
+    return projects
 }
 
 export function fetchServices() {
@@ -49,5 +49,5 @@ export function fetchServices() {
             }
         
     ]
-    return JSON.parse(JSON.stringify(projects))
+    return projects
 }
