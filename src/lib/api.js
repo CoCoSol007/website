@@ -48,10 +48,10 @@ export function fetchServices() {
             "link_img": "upkuma.svg"
         },
         {
-            "title": "Focalboard",
-            "description": "Focalboard is an open source, multilingual, self-hosted project management tool.",
+            "title": "Planka",
+            "description": "The realtime kanban board for workgroups built with React and Redux.",
             "link": "https://todo.cocosol.fr",
-            "link_img": "focalboard.png"
+            "link_img": "planka.png"
         }
 
     ]
