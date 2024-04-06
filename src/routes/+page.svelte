@@ -3,6 +3,8 @@
 
   let projects = fetchProjects();
   let services = fetchServices();
+
+  import logo from "../assets/logo.svg";
 </script>
 
 <!-- My projects section -->
@@ -93,7 +95,7 @@
     <div class="md:w-1/2 relative">
       <img
         alt="logo"
-        src="logo.svg"
+        src={logo}
         class="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110"
       />
     </div>
