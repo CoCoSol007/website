@@ -63,3 +63,18 @@ export function fetchServices() {
     ]
     return projects
 }
+
+export async function fetchArticles() {
+    const articles = [
+        {
+            title: "Introducing CoCoSol",
+            description: "Get to know CoCoSol, a passionate young developer.",
+            date: "04/19/2024",
+            content: "Hello World !\n\nMy name is CoCoSol and I am a 17-year-old French coder with a strong desire to learn. Although I do not have much experience, I am passionate about development and math. Currently, I am a student at Caousou in France and I am always seeking new challenges.\n\nTo contact me or ask any questions, please email me at contact@cocosol.fr.\n\nPS: I love rust and I hate python and javascript.",
+            isActive: true // By default, the article is not expanded
+        }
+        
+    ];
+
+    return articles;
+}

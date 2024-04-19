@@ -8,12 +8,12 @@
 </script>
 
 <!-- My projects section -->
-<h1 class="text-3xl font-bold mx-auto text-center mt-8">My projects</h1>
+<h1 class="text-3xl font-bold mx-auto text-center mt-8 text-white">My projects</h1>
 <div class="container mx-auto my-8 flex flex-wrap justify-center">
   {#each projects as project}
     <a
       href={project.link}
-      class="flex flex-row m-5 w-full lg:w-1/3 px-4 mb-4 duration-300 hover:bg-gray-600 hover:scale-105 bg-gray-700 p-6 rounded-lg shadow-md"
+      class="flex flex-row m-5 w-full lg:w-1/3 px-4 mb-4 duration-300 hover:bg-gray-800 hover:scale-105 bg-gray-900 p-6 rounded-lg shadow-md"
     >
       <img
         src={project.link_img}
@@ -21,10 +21,10 @@
         class="w-1/3 h-40 object-contain mb-4 rounded-lg"
       />
       <div
-        class="w-2/3 flex flex-col justify-between p-4 leading-normal text-white"
+        class="w-2/3 flex flex-col justify-between p-4 leading-normal text-gray-300"
       >
         <h5
-          class="mb-2 h-1/3 text-2xl font-bold tracking-tight text-gray-900 text-white"
+          class="mb-2 h-1/3 text-2xl font-bold tracking-tight text-gray-100"
         >
           {project.title}
         </h5>
@@ -37,11 +37,11 @@
 </div>
 
 <!-- My services section -->
-<h1 class="text-3xl font-bold mx-auto text-center mt-8">My services</h1>
+<h1 class="text-3xl font-bold mx-auto text-center mt-8 text-white">My services</h1>
 <div class="container mx-auto my-8 flex flex-wrap justify-center">
   {#each services as service}
     <div
-      class="w-full max-w-sm m-4 rounded-lg shadow bg-gray-700 border-gray-600 flex flex-col"
+      class="w-full max-w-sm m-4 rounded-lg shadow bg-gray-900 border-gray-800 flex flex-col"
     >
       <img
         src={service.link_img}
@@ -50,11 +50,11 @@
       />
       <div class="flex-1 p-5">
         <h5
-          class="mb-2 text-2xl font-bold tracking-tight text-gray-900 text-white"
+          class="mb-2 text-2xl font-bold tracking-tight text-gray-100"
         >
           {service.title}
         </h5>
-        <article class="mb-3 font-normal text-gray-400 text-gray-400">
+        <article class="mb-3 font-normal text-gray-300">
           {service.description}
         </article>
       </div>
@@ -69,7 +69,7 @@
 </div>
 
 <!-- About Me section -->
-<section class="pt-10 overflow-hidden bg-grey-800 md:pt-0 sm:pt-16 2xl:pt-16">
+<section class="pt-10 overflow-hidden md:pt-0 sm:pt-16 2xl:pt-16">
   <div
     class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl flex flex-col md:flex-row p-10"
   >
@@ -79,7 +79,7 @@
       >
         whoami ?
       </h2>
-      <p class="max-w-lg mt-3 text-xl leading-relaxed text-gray-50 md:mt-8">
+      <p class="max-w-lg mt-3 text-xl leading-relaxed text-gray-300 md:mt-8">
         Hello World ! <br />
         My name is CoCoSol and I am a 17-year-old French coder with a strong desire
         to learn.<br />
