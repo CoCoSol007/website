@@ -7,6 +7,22 @@
   import logo from "../assets/logo.svg";
 </script>
 
+<!-- Intro -->
+<div class="relative flex flex-col md:flex-row">
+  <div class="flex-1">
+    <div class="absolute inset-0 flex justify-center items-center">
+      <div class="p-8 rounded-lg text-center md:text-left">
+        <h1 class="text-4xl md:text-8xl font-bold text-white mb-4 md:mb-8 md:text-shadow-[0 0.7px 0 rgba(0,0,0,0.6)]">Coding with passion</h1>
+        <h2 class="text-2xl md:text-4xl text-white md:text-shadow-[0 0.7px 0 rgba(0,0,0,0.6)]">Learning with purpose</h2>
+      </div>
+    </div>
+  </div>
+  <div class="flex-1">
+    <img alt="logo" src={logo} class="w-full h-full object-cover" />
+  </div>
+</div>
+
+
 <!-- My projects section -->
 <h1 class="text-3xl font-bold mx-auto text-center mt-8 text-white">My projects</h1>
 <div class="container mx-auto my-8 flex flex-wrap justify-center">
