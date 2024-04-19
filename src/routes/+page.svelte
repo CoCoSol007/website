@@ -29,7 +29,7 @@
   {#each projects as project}
     <a
       href={project.link}
-      class="flex flex-row m-5 w-full lg:w-1/3 px-4 mb-4 duration-300 hover:bg-gray-800 hover:scale-105 bg-gray-900 p-6 rounded-lg shadow-md"
+      class="flex flex-row m-5 w-full lg:w-1/3 px-4 mb-4 duration-300 hover:bg-gray-800 hover:scale-105 bg-gray-900 p-6 rounded-lg shadow-md border border-gray-700"
     >
       <img
         src={project.link_img}
@@ -57,7 +57,7 @@
 <div class="container mx-auto my-8 flex flex-wrap justify-center">
   {#each services as service}
     <div
-      class="w-full max-w-sm m-4 rounded-lg shadow bg-gray-900 border-gray-800 flex flex-col"
+      class="w-full max-w-sm m-4 rounded-lg shadow bg-gray-900 flex flex-col border border-gray-700"
     >
       <img
         src={service.link_img}
