@@ -7,7 +7,7 @@
     <h1 class="text-5xl font-extrabold mb-6">Oops! Something went wrong...</h1>
     <h2 class="text-3xl font-semibold mb-8">{$page.error.message}</h2>
     <p>While we fix things up, why not take a moment to enjoy this adorable cat?</p>
-    <img src="https://cataas.com/cat/cute" alt="Adorable Cat" class="mt-8 mx-auto rounded-full" style="max-width: 300px;">
+    <img src="https://cataas.com/cat/cute" alt="Adorable Cat" class="mt-8 mx-auto rounded-2xl" style="max-width: 300px;">
     <p class="mt-4 text-sm">Psst... You can reload to see a new cat!</p>
   </div>
 </div>
