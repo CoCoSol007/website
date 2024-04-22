@@ -10,6 +10,12 @@ export function fetchProjects() {
             "link_img": "border-wars.png"
         },
         {
+            "title": "Beats into shapes",
+            "description": "A rhythm game where you forge items from the very beginning of the process.",
+            "link": "https://edmondada.itch.io/beats-into-shapes",
+            "link_img": "beats_into_shapes.png"
+        },
+        {
             "title": "Casino Dingo",
             "description": "Casino Dingo is a 2D game developed using the Godot engine. ",
             "link": "https://github.com/CoCoSol007/casino-dingo",
