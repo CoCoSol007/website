@@ -29,8 +29,8 @@
                 <p class="text-sm text-gray-400">{article.date}</p>
             </div>
             { #if article.show }
-            <div class="pb-8 pt-2">
-                <p class="text-gray-300">{article.content}</p>
+            <div class="pb-8 pt-4 whitespace-pre-line">
+                <p class="text-gray-300">{@html article.content}</p>
             </div>
             {/if}
         </div>
