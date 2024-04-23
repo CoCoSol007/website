@@ -103,9 +103,7 @@
         and math. Currently, I am a student at
         <a href="https://www.caousou.com/" class="text-blue-500">Caousou</a>
         in France and I am always seeking new challenges. <br /> To contact me
-        or ask any questions, please email me at contact@cocosol.fr. <br /><br
-        />
-        PS: I love rust and I hate python and javascript.
+        or ask any questions, please email me at contact@cocosol.fr. <br />
       </p>
     </div>
     <div class="md:w-1/2 relative">
