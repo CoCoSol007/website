@@ -1,6 +1,6 @@
 <script>
-    export let data;
-    import arrow from "../../../assets/arrow.svg";
+export let data;
+import arrow from "../../../assets/arrow.svg";
 </script>
 
 <div class="container mx-auto w-2/3 py-8 ">

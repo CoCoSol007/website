@@ -115,7 +115,6 @@ export async function fetchArticles() {
         <p class="text-lg text-white">To contact me or ask questions, email me at <a href="mailto:contact@cocosol.fr" class="text-blue-500 hover:underline">contact@cocosol.fr</a>.</p>
     </div>
 `,
-
       id: "0",
     },
   ];
