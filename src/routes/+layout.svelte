@@ -1,6 +1,6 @@
 <script>
 import "../app.css";
-import logo from "../assets/logo.svg";
+import logo from "/src/assets/logo.svg";
 </script>
 
 <nav class="bg-gray-900 fixed w-full top-0 z-50 backdrop-blur-2xl bg-gray-900/80 border-b border-gray-700">
