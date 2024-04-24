@@ -31,15 +31,15 @@ import logo from "../assets/logo.svg";
       </button>
     </div>
     <div class="items-center justify-between w-full md:flex md:w-auto md:order-1 {isOpen ? '' : 'hidden'}" id="navbar-sticky">
-      <ul class="flex flex-col m-2 p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 border-gray-700">
+      <ul class="flex flex-col md:my-auto md:p-0 m-2 font-medium border rounded-lg md:space-x-4 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 border-gray-700">
         <li>
-          <a href="/" class="block py-2 px-3 text-gray-300 rounded md:hover:bg-transparent md:hover:text-blue-500 md:p-0">Home</a>
+          <a href="/" class="block py-2 px-3 text-gray-300 rounded md:hover:bg-transparent md:hover:text-blue-500 md:hover:underline md:p-0 transition ease-in-out">Home</a>
         </li>
         <li>
-          <a href="/blog" class="block py-2 px-3 text-gray-300 rounded md:hover:bg-transparent md:hover:text-blue-500 md:p-0">Blog</a>
+          <a href="/blog" class="block py-2 px-3 text-gray-300 rounded md:hover:bg-transparent md:hover:text-blue-500 md:hover:underline md:p-0 transition ease-in-out">Blog</a>
         </li>
         <li>
-          <a href="https://github.com/cocosol007" class="block py-2 px-3 text-gray-300 rounded md:hover:bg-transparent md:hover:text-blue-500 md:p-0">GitHub</a>
+          <a href="https://github.com/cocosol007" class="block py-2 px-3 text-gray-300 rounded md:hover:bg-transparent md:hover:text-blue-500 md:hover:underline md:p-0 transition ease-in-out">GitHub</a>
         </li>
       </ul>
     </div>
