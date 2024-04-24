@@ -40,7 +40,7 @@
 
     <section class="my-8">
         <h2 class="text-3xl font-bold mb-4 text-white">Preview</h2>
-        <div class="grid grid-cols-2 gap-4 mb-4">    
+        <div class="grid grid-cols-1 gap-4 mb-4 md:grid-cols-2">    
             <img src={image1} alt="Preview 1" class="w-full h-auto">
             <img src={image2} alt="Preview 2" class="w-full h-auto">
             <img src={image3} alt="Preview 3" class="w-full h-auto">
