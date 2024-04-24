@@ -19,7 +19,7 @@ onMount(async () => {
     <div class="my-4 border-b border-gray-700 pb-4">
         <div class="flex justify-between items-center" >
             <div>
-                <a href="/blog/{article.id}" class="text-lg font-semibold text-gray-200 hover:underline cursor-pointer">{article.title}</a>
+                <a href="/blog/{article.path}" class="text-lg font-semibold text-gray-200 hover:underline cursor-pointer">{article.title}</a>
                 <p class="text-sm text-gray-400">{article.description}</p>
             </div>
             <p class="text-sm text-gray-400">{article.date}</p>
