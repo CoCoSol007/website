@@ -1,19 +1,51 @@
 <script>
 import "../app.css";
-import logo from "/src/assets/logo.svg";
+import logo from "../assets/logo.svg";
+  import { onMount } from 'svelte';
+
+  let isOpen = false;
+
+  const toggleMenu = () => {
+    isOpen = !isOpen;
+  };
+
+  // Close the menu when navigating
+  onMount(() => {
+    const closeMenuOnNavigation = () => {
+      isOpen = false;
+    };
+    window.addEventListener('popstate', closeMenuOnNavigation);
+    return () => window.removeEventListener('popstate', closeMenuOnNavigation);
+  });
 </script>
 
-<nav class="bg-gray-900 fixed w-full top-0 z-50 backdrop-blur-2xl bg-gray-900/80 border-b border-gray-700">
-    <div class="container mx-auto flex items-center justify-between">
-        <img class="h-16 w-16" src={logo} alt="icon" />
-        <div class="flex items-center">
-            <a href="/" class="text-gray-300 mx-2 transition ease-in-out hover:text-blue-700">Home</a>
-            <a href="/blog" class="text-gray-300 mx-2 transition ease-in-out hover:text-blue-700">Blog</a>
-            <a href="https://github.com/CoCoSol007" class="text-gray-300 mx-2 transition ease-in-out hover:text-blue-700">GitHub</a>
-        </div>
-        <h1 class="font-bold text-lg">CoCoSol</h1>
+<nav class="fixed w-full z-20 top-0 start-0 border-b border-gray-600 backdrop-blur-2xl bg-gray-900/80">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+      <img src={logo} alt="Logo" class="w-16 h-16 my-auto" />
+    <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <h1 class="text-xl font-bold text-gray-100 my-auto">CoCoSol</h1>
+      <button on:click={() => toggleMenu()} type="button" class="inline-flex items-center m-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
     </div>
+    <div class="items-center justify-between w-full md:flex md:w-auto md:order-1 {isOpen ? '' : 'hidden'}" id="navbar-sticky">
+      <ul class="flex flex-col m-2 p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 border-gray-700">
+        <li>
+          <a href="/" class="block py-2 px-3 text-gray-300 rounded md:hover:bg-transparent md:hover:text-blue-500 md:p-0">Home</a>
+        </li>
+        <li>
+          <a href="/blog" class="block py-2 px-3 text-gray-300 rounded md:hover:bg-transparent md:hover:text-blue-500 md:p-0">Blog</a>
+        </li>
+        <li>
+          <a href="https://github.com/cocosol007" class="block py-2 px-3 text-gray-300 rounded md:hover:bg-transparent md:hover:text-blue-500 md:p-0">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
+
 <br>
 <br>
 
