@@ -31,7 +31,7 @@ import logo from "../assets/logo.svg";
     {#each projects as project}
     <a
         href={project.link}
-        class="flex flex-row m-5 w-full lg:w-1/3 px-4 mb-4 duration-300 hover:bg-gray-800 hover:scale-105 bg-gray-900 p-6 rounded-lg shadow-md border border-gray-700"
+        class="flex flex-row m-5 w-full lg:w-1/3 px-4 mb-4 duration-300 hover:scale-105 bg-gray-900 p-6 rounded-lg shadow-md border border-gray-700"
         >
         <img
             src={project.link_img}
@@ -78,7 +78,7 @@ import logo from "../assets/logo.svg";
         </div>
         <a
             href={service.link}
-            class="mb-0 inline-flex items-center justify-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-b-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+            class="mb-0 inline-flex items-center transition justify-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-b-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
             >
             Check it out
         </a>
