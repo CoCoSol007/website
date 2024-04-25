@@ -1,11 +1,11 @@
-import acrcade from "../assets/arcade.png";
-import simple3d from "../assets/renderer.png";
-import casino_dingo from "../assets/casino_dingo.png";
-import border_wars from "../assets/border-wars.png";
-import planka from "../assets/planka.png";
+import acrcade from "../assets/arcade.webp";
+import simple3d from "../assets/renderer.webp";
+import casino_dingo from "../assets/casino_dingo.webp";
+import border_wars from "../assets/border-wars.webp";
+import planka from "../assets/planka.webp";
 import logo from "../assets/logo.svg";
 import upkuma from "../assets/upkuma.svg";
-import beats_into_shapes from "../assets/beats_into_shapes.png";
+import beats_into_shapes from "../assets/beats_into_shapes.webp";
 
 export function fetchProjects() {
   const projects = [
