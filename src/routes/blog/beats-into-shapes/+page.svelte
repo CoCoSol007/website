@@ -29,7 +29,7 @@
     <section class="my-8">
         <h2 class="text-3xl font-bold mb-4 text-white">Try the Game!</h2>
         <p class="text-lg mb-4 text-white">Ready to forge your own beats? Click below to play!</p>
-        <button onclick="window.location.href='https://edmondada.itch.io/beats-into-shapes'" class="bg-blue-500 hover:bg-blue-700 hover:scale-105 text-white font-bold py-2 px-4 rounded-xl transition ease-in-out inline-flex items-center gap-2">
+        <button onclick="window.location.href='https://edmondada.itch.io/beats-into-shapes'" class="bg-blue-600 hover:bg-blue-700 hover:scale-105 text-white font-bold py-2 px-4 rounded-xl transition ease-in-out inline-flex items-center gap-2">
             <span>Play Now</span>
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.25 5.75L18.75 12L14.25 18.25"></path>
