@@ -1,9 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/**/*.{html,js,svelte,ts}'],
+  content:  {
+    relative: true,
+    transform: (content) => content.replace(/taos:/g, ''),
+    files: ['./src/**/*.{html,js,svelte,ts}'],
+  },  
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('taos/plugin')
+  ],
+  safelist: [
+    '!duration-[0ms]',
+    '!delay-[0ms]',
+    'html.js :where([class*="taos:"]:not(.taos-init))'
+  ]
 }
 

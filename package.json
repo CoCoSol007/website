@@ -21,6 +21,7 @@
 	"type": "module",
 	"dependencies": {
 		"fs": "^0.0.1-security",
-		"rollup": "^4.9.6"
+		"rollup": "^4.9.6",
+		"taos": "^1.0.5"
 	}
 }
