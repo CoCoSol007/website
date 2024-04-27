@@ -28,67 +28,63 @@ import logo from "../assets/logo.svg";
 <!-- My projects section -->
 <h1 class="text-3xl font-bold mx-auto text-center mt-8 text-white">My projects</h1>
 
-<div class="duration-[600ms] delay-100 taos:[transform:translate3d(0,200px,0)_scale(0.6)] taos:opacity-0" data-taos-offset="100">
-    <div class="container mx-auto my-8 flex flex-wrap justify-center">
-        {#each projects as project}
-        <a
-            href={project.link}
-            class="flex flex-row m-5 w-full lg:w-1/3 px-4 mb-4 duration-300 hover:scale-105 bg-gray-900 p-6 rounded-lg shadow-md border border-gray-700"
+<div class="container mx-auto my-8 flex flex-wrap justify-center">
+    {#each projects as project}
+    <a
+        href={project.link}
+        class="flex flex-row m-5 w-full lg:w-1/3 px-4 mb-4 duration-300 hover:scale-105 bg-gray-900 p-6 rounded-lg shadow-md border border-gray-700 duration-[600ms] delay-100 taos:[transform:translate3d(0,200px,0)_scale(0.6)] taos:opacity-0" data-taos-offset="100"
+        >
+        <img
+            src={project.link_img}
+            alt="logo"
+            class="w-1/3 h-40 object-contain mb-4 rounded-lg"
+            />
+        <div
+            class="w-2/3 flex flex-col justify-between p-4 leading-normal text-gray-300"
             >
-            <img
-                src={project.link_img}
-                alt="logo"
-                class="w-1/3 h-40 object-contain mb-4 rounded-lg"
-                />
-            <div
-                class="w-2/3 flex flex-col justify-between p-4 leading-normal text-gray-300"
+            <h4
+                class="mb-2 h-1/3 text-2xl font-bold tracking-tight text-gray-100"
                 >
-                <h4
-                    class="mb-2 h-1/3 text-2xl font-bold tracking-tight text-gray-100"
-                    >
-                    {project.title}
-                </h4>
-                <article class="mb-3 h-2/3 font-normal text-gray-400 text-wrap">
-                    {project.description}
-                </article>
-            </div>
-        </a>
-        {/each}
-    </div>
+                {project.title}
+            </h4>
+            <article class="mb-3 h-2/3 font-normal text-gray-400 text-wrap">
+                {project.description}
+            </article>
+        </div>
+    </a>
+    {/each}
 </div>
 
 <!-- My services section -->
 <h1 class="text-3xl font-bold mx-auto text-center mt-8 text-white">My services</h1>
-<div class="duration-[600ms] taos:[transform:translate3d(0,200px,0)_scale(0.6)] taos:opacity-0" data-taos-offset="100">
-    <div class="container mx-auto my-8 flex flex-wrap justify-center">
-        {#each services as service}
-        <div
-            class="w-full max-w-sm m-4 rounded-lg shadow bg-gray-900 flex flex-col border border-gray-700"
-            >
-            <img
-                src={service.link_img}
-                alt="logo"
-                class="rounded-t-lg h-40 w-full pt-4 object-contain"
-                />
-            <div class="flex-1 p-5">
-                <h5
-                    class="mb-2 text-xl font-bold tracking-tight text-gray-100"
-                    >
-                    {service.title}
-                </h5>
-                <article class="mb-3 font-normal text-gray-300">
-                    {service.description}
-                </article>
-            </div>
-            <a
-                href={service.link}
-                class="mb-0 inline-flex items-center transition justify-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-b-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+<div class="container mx-auto my-8 flex flex-wrap justify-center">
+    {#each services as service}
+    <div
+        class="w-full max-w-sm m-4 rounded-lg shadow bg-gray-900 flex flex-col border border-gray-700 duration-[600ms] taos:[transform:translate3d(0,200px,0)_scale(0.6)] taos:opacity-0" data-taos-offset="100"
+        >
+        <img
+            src={service.link_img}
+            alt="logo"
+            class="rounded-t-lg h-40 w-full pt-4 object-contain"
+            />
+        <div class="flex-1 p-5">
+            <h5
+                class="mb-2 text-xl font-bold tracking-tight text-gray-100"
                 >
-                Check it out
-            </a>
+                {service.title}
+            </h5>
+            <article class="mb-3 font-normal text-gray-300">
+                {service.description}
+            </article>
         </div>
-        {/each}
+        <a
+            href={service.link}
+            class="mb-0 inline-flex items-center transition justify-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-b-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+            >
+            Check it out
+        </a>
     </div>
+    {/each}
 </div>
 
 <!-- About Me section -->
