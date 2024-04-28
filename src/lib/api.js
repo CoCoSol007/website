@@ -77,6 +77,12 @@ export function fetchServices() {
 export async function fetchArticles() {
   const articles = [
     {
+      title: "Future projects",
+      description: "A non-exhaustive list of my future projects.",
+      date: "04/28/2024",
+      path: "future-projects",
+    },
+    {
       title: "New game project: Beats into shape",
       description:
         "A rhythm game where you forge items from the very beginning of the process.",
