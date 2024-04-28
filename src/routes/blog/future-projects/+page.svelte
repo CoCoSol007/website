@@ -65,7 +65,7 @@ let futureProjects = [
                   {:else}
                   <p class="text-gray-400 mt-2">This project has not been completed yet.</p>
                   {/if}
-                  <span class="inline-block rounded-xl px-3 py-1 text-sm font-semibold mr-2 mt-2 {project.difficulty === 'easy' ? 'bg-yellow-500' : project.difficulty === 'medium' ? 'bg-blue-500' : 'bg-red-500'}">{project.difficulty}</span>
+                  <span class="inline-block rounded-xl px-3 py-1 text-sm font-semibold mr-2 mt-2 {project.difficulty === 'easy' ? 'bg-green-500' : project.difficulty === 'medium' ? 'bg-yellow-600' : 'bg-red-500'}">{project.difficulty}</span>
               </div>
           </li>
           {/each}
