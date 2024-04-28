@@ -58,7 +58,7 @@ import logo from "../assets/logo.svg";
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full">
         <p class="text-white text-center mb-2">© 2024 CoCoSol</p>
         <div class="text-center">
-            <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.fr" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">Licensed under CC BY-NC 4.0 DEED</a>
+            <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.en" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">Licensed under CC BY-NC 4.0 DEED</a>
         </div>
     </div>
 </footer>
