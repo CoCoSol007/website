@@ -7,8 +7,8 @@
     import image5 from "../../../assets/beats/5.png";
 </script>
 
-<div class="container mx-auto w-2/3 py-8">
-    <div class="flex items-center gap-2 my-4">
+<div class="container mx-auto max-w-6xl p-8">
+    <div class="flex items-center gap-2 mb-4">
         <a href="/blog">
             <img src={arrow} alt="Back to Blog" class="w-12 h-12 hover:scale-125 transition">
         </a>

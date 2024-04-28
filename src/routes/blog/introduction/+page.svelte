@@ -2,8 +2,8 @@
   import arrow from "../../../assets/arrow.svg";
 </script>
 
-<div class="container mx-auto max-w-2xl p-8">
-    <div class="flex flex-row items-center md:items-start gap-2 m-4">
+<div class="container mx-auto max-w-6xl p-8">
+    <div class="flex flex-row items-center md:items-start gap-2 mb-4">
         <a href="/blog" class="md:self-start">
             <img src={arrow} alt="Back to Blog" class="w-full h-full hover:scale-125 transition">
         </a>
