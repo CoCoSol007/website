@@ -4,7 +4,7 @@ import arrow from "../../../assets/arrow.svg";
 let futureProjects = [
     {
         name: "Simple Minecraft plugin",
-        description: "Create a simple plugin for Minecraft to understand game development and learn JavaScript.",
+        description: "Create a simple plugin for Minecraft to understand game development and learn Java.",
         difficulty: "easy",
         done: false
     },
