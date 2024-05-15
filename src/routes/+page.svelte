@@ -10,6 +10,11 @@ let services = fetchServices();
 import logo from "../assets/logo.svg";
 </script>
 
+<svelte:head>
+    <title>CoCoSol</title>
+    <meta name="description" content="Welcome to my personal blog where I showcase my projects, share my ideas, and offer my services. Explore articles about tech, artificial intelligence, mathematics, reflections on life, philosophy, and much more." />
+</svelte:head>
+
 <!-- Intro -->
 <div class="relative flex flex-col md:flex-row">
     <div class="flex-1">
