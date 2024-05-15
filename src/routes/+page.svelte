@@ -42,11 +42,11 @@ import logo from "../assets/logo.svg";
         <div
             class="w-2/3 flex flex-col justify-between p-4 leading-normal text-gray-300"
             >
-            <h4
+            <p
                 class="mb-2 h-1/3 text-2xl font-bold tracking-tight text-gray-100"
                 >
                 {project.title}
-            </h4>
+            </p>
             <article class="mb-3 h-2/3 font-normal text-gray-400 text-wrap">
                 {project.description}
             </article>
@@ -68,11 +68,11 @@ import logo from "../assets/logo.svg";
             class="rounded-t-lg h-40 w-full pt-4 object-contain"
             />
         <div class="flex-1 p-5">
-            <h5
+            <p
                 class="mb-2 text-xl font-bold tracking-tight text-gray-100"
                 >
                 {service.title}
-            </h5>
+            </p>
             <article class="mb-3 font-normal text-gray-300">
                 {service.description}
             </article>
