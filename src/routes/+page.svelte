@@ -103,9 +103,8 @@ import logo from "../assets/logo.svg";
                 My name is CoCoSol and I am a 17-year-old French coder with a strong desire
                 to learn.<br />
                 Although I do not have much experience, I am passionate about development
-                and math. Currently, I am a student at
-                <a href="https://www.caousou.com/" class="text-blue-500">Caousou</a>
-                in France and I am always seeking new challenges. <br /> To contact me
+                and math. Currently, I am a student at Caousou in France <br /> 
+                and I am always seeking new challenges. <br /> To contact me
                 or ask any questions, please email me at contact@cocosol.fr. <br />
             </p>
         </div>
