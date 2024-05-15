@@ -2,7 +2,7 @@
 import {
     fetchProjects,
     fetchServices
-} from "$lib/api.js"; // Assuming you have separate functions to fetch projects and services
+} from "$lib/api.js";
 
 let projects = fetchProjects();
 let services = fetchServices();
