@@ -8,6 +8,12 @@ let projects = fetchProjects();
 let services = fetchServices();
 
 import logo from "../assets/logo.svg";
+
+const birthDate = new Date('2007-10-29');
+  
+const currentDate = new Date();
+  
+const age = Math.floor((currentDate - birthDate) / (1000 * 60 * 60 * 24 * 365));
 </script>
 
 <svelte:head>
@@ -105,7 +111,7 @@ import logo from "../assets/logo.svg";
             </h2>
             <p class="max-w-lg mt-3 text-xl leading-relaxed text-gray-300 md:mt-8">
                 Hello World ! <br />
-                My name is CoCoSol and I am a 17-year-old French coder with a strong desire
+                My name is CoCoSol and I am a {age}-year-old French coder with a strong desire
                 to learn.<br />
                 Although I do not have much experience, I am passionate about development
                 and math. Currently, I am a student at Caousou in France <br /> 
