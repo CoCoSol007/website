@@ -20,7 +20,7 @@ export function fetchProjects() {
       title: "Beats into shapes",
       description:
         "A rhythm game where you forge items from the very beginning of the process.",
-      link: "https://edmondada.itch.io/beats-into-shapes",
+      link: "https://github.com/CoCoSol007/beats-into-shapes",
       link_img: beats_into_shapes,
     },
     {
