@@ -43,7 +43,7 @@ const age = Math.floor((currentDate - birthDate) / (1000 * 60 * 60 * 24 * 365));
     {#each projects as project}
     <a
         href={project.link}
-        class="flex flex-row m-5 w-full lg:w-1/3 px-4 mb-4 duration-300 hover:scale-105 bg-gray-900 p-6 rounded-lg shadow-md border border-gray-700 duration-[600ms] delay-100 taos:[transform:translate3d(0,200px,0)_scale(0.6)] taos:opacity-0" data-taos-offset="100"
+        class="flex flex-row m-5 w-full lg:w-1/3 px-4 mb-4 duration-300 hover:scale-105 bg-gray-900 p-6 rounded-lg shadow-md border border-gray-700 duration-[600ms] delay-100 taos:[transform:translate3d(0,200px,0)_scale(0.6)] taos:opacity-0"
         >
         <img
             src={project.link_img}
@@ -71,7 +71,7 @@ const age = Math.floor((currentDate - birthDate) / (1000 * 60 * 60 * 24 * 365));
 <div class="container mx-auto my-8 flex flex-wrap justify-center">
     {#each services as service}
     <div
-        class="w-full max-w-sm m-4 rounded-lg shadow bg-gray-900 flex flex-col border border-gray-700 duration-[600ms] taos:[transform:translate3d(0,200px,0)_scale(0.6)] taos:opacity-0" data-taos-offset="100"
+        class="w-full max-w-sm m-4 rounded-lg shadow bg-gray-900 flex flex-col border border-gray-700 duration-[600ms] taos:[transform:translate3d(0,200px,0)_scale(0.6)] taos:opacity-0"
         >
         <img
             src={service.link_img}
