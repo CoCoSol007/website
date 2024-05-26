@@ -16,28 +16,16 @@
     </div>
     <p class="text-xl text-gray-300">A rhythm game where you forge items from the very beginning of the process.</p>
     <div class="text-left">
-        <h1 class="text-3xl font-bold mb-4 text-white">Welcome to our submission for Godot Wild Jam #68</h1>
-        <p class="text-lg mb-6 text-white">This month's theme was Forge, inspiring us to create a rhythmic adventure where you craft items from start to finish.</p>
+        <h1 class="text-3xl font-bold mb-4 text-white">Welcome to our submission for YH4F 2024</h1>
+        <p class="text-lg mb-6 text-white">We create a rhythmic adventure where you craft items from start to finish.</p>
     </div>
     
     <section class="my-8">
         <h2 class="text-3xl font-bold mb-4 text-white">Gameplay</h2>
         <p class="text-lg text-white">You play as a smith in your forge, making objects in rhythm with the music.</p>
-        <p class="text-lg text-white">The game contains 4 levels with each level representing every step to create a nice and flawless metallic object.</p>
+        <p class="text-lg text-white">The game contains 5 levels with each level representing every step to create a nice and flawless metallic object.</p>
     </section>
     
-    <section class="my-8">
-        <h2 class="text-3xl font-bold mb-4 text-white">Try the Game!</h2>
-        <p class="text-lg mb-4 text-white">Ready to forge your own beats? Click below to play!</p>
-        <button onclick="window.location.href='https://edmondada.itch.io/beats-into-shapes'" class="bg-blue-600 hover:bg-blue-700 hover:scale-105 text-white font-bold py-2 px-4 rounded-xl transition ease-in-out inline-flex items-center gap-2">
-            <span>Play Now</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.25 5.75L18.75 12L14.25 18.25"></path>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 5.75L14.25 12L9.75 18.25"></path>
-            </svg>
-        </button>
-    </section>
-
     <section class="my-8">
         <h2 class="text-3xl font-bold mb-4 text-white">Preview</h2>
         <div class="grid grid-cols-1 gap-4 mb-4 md:grid-cols-2">    
