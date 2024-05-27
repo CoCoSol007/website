@@ -22,7 +22,22 @@ body {
     font-family: 'Inter Tight', sans-serif;
 }
 
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-fade-in-right {
+    animation: fadeInRight 0.5s ease-out forwards;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
