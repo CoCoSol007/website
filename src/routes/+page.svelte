@@ -22,7 +22,7 @@ const age = Math.floor((currentDate - birthDate) / (1000 * 60 * 60 * 24 * 365));
 </svelte:head>
 
 <!-- Intro -->
-<div class="relative flex flex-col md:flex-row">
+<div class="relative flex flex-col md:flex-row duration-[600ms] taos:translate-x-[-200px] taos:opacity-0">
     <div class="flex-1">
         <div class="absolute inset-0 flex justify-center items-center">
             <div class="p-8 rounded-lg text-center md:text-left">
