@@ -1,4 +1,3 @@
-import acrcade from "../assets/arcade.webp";
 import simple3d from "../assets/renderer.webp";
 import casino_dingo from "../assets/casino_dingo.webp";
 import border_wars from "../assets/border-wars.webp";
