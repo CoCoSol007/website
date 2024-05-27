@@ -31,13 +31,6 @@ export function fetchProjects() {
       link_img: casino_dingo,
     },
     {
-      title: "Arcade Game",
-      description:
-        "Arcade is a litle retro game made with python and pygame. We made this game in 2021",
-      link: "https://github.com/CoCoSol007/arcade",
-      link_img: acrcade,
-    },
-    {
       title: "Simple 3D renderer",
       description:
         "It's a simple 3d rederer made in python with pygame and math",
