@@ -25,6 +25,11 @@
         <p class="text-lg text-white">You play as a smith in your forge, making objects in rhythm with the music.</p>
         <p class="text-lg text-white">The game contains 5 levels with each level representing every step to create a nice and flawless metallic object.</p>
     </section>
+
+    <section class="my-8">
+        <h2 class="text-3xl font-bold mb-4 text-white">The Universe of Beats into Shape</h2>
+        <p class="text-lg text-white">In a world where music and nature intertwine, there exists a hidden valley named Harmony. At the heart of this valley lies the Ethereal Forge, a place of creation where blacksmiths work in harmony with the natural rhythms of music. Eirik, a young blacksmith, inherits this forge and discovers the fulfilling craft of blacksmithing.</p>
+    </section>
     
     <section class="my-8">
         <h2 class="text-3xl font-bold mb-4 text-white">Preview</h2>
