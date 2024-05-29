@@ -36,6 +36,7 @@ body {
 
 .animate-fade-in-right {
     animation: fadeInRight 0.5s ease-out forwards;
+    animation-delay: 500ms;
 }
 
 @tailwind base;
