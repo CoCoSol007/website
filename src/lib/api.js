@@ -5,6 +5,7 @@ import planka from "../assets/planka.webp";
 import logo from "../assets/logo.svg";
 import upkuma from "../assets/upkuma.svg";
 import beats_into_shapes from "../assets/beats_into_shapes.webp";
+import hexing from "../assets/hexing.webp";
 
 export function fetchProjects() {
   const projects = [
@@ -21,6 +22,13 @@ export function fetchProjects() {
         "A rhythm game where you forge items from the very beginning of the process.",
       link: "https://github.com/CoCoSol007/beats-into-shapes",
       link_img: beats_into_shapes,
+    },
+    {
+      title: "Hexing",
+      description:
+        "A basic Rust library to manipulate hexagonal grids.",
+      link: "https://crates.io/crates/hexing",
+      link_img: hexing,
     },
     {
       title: "Casino Dingo",
