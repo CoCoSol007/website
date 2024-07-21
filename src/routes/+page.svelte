@@ -1,11 +1,9 @@
 <script>
 import {
     fetchProjects,
-    fetchServices
 } from "$lib/api.js";
 
 let projects = fetchProjects();
-let services = fetchServices();
 
 import logo from "../assets/logo.svg";
 
@@ -63,38 +61,6 @@ const age = Math.floor((currentDate - birthDate) / (1000 * 60 * 60 * 24 * 365));
             </article>
         </div>
     </a>
-    {/each}
-</div>
-
-<!-- My services section -->
-<h1 class="text-3xl font-bold mx-auto text-center mt-8 text-white">My services</h1>
-<div class="container mx-auto my-8 flex flex-wrap justify-center">
-    {#each services as service}
-    <div
-        class="w-full max-w-sm m-4 rounded-lg shadow bg-gray-900 flex flex-col border border-gray-700 duration-[600ms] taos:[transform:translate3d(0,200px,0)_scale(0.6)] taos:opacity-0"
-        >
-        <img
-            src={service.link_img}
-            alt="logo"
-            class="rounded-t-lg h-40 w-full pt-4 object-contain"
-            />
-        <div class="flex-1 p-5">
-            <p
-                class="mb-2 text-xl font-bold tracking-tight text-gray-100"
-                >
-                {service.title}
-            </p>
-            <article class="mb-3 font-normal text-gray-300">
-                {service.description}
-            </article>
-        </div>
-        <a
-            href={service.link}
-            class="mb-0 inline-flex items-center transition justify-center px-3 py-2 text-sm font-medium text-white bg-blue-700 rounded-b-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
-            >
-            Check it out
-        </a>
-    </div>
     {/each}
 </div>
 

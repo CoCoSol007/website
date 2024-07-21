@@ -54,26 +54,6 @@ export function fetchProjects() {
   return projects;
 }
 
-export function fetchServices() {
-  const projects = [
-    {
-      title: "Uptime Kuma",
-      description:
-        "It is a self-hosted server monitoring tool. It can be configured to send alerts.",
-      link: "https://up.cocosol.fr",
-      link_img: upkuma,
-    },
-    {
-      title: "Planka",
-      description:
-        "The realtime kanban board for workgroups built with React and Redux.",
-      link: "https://todo.cocosol.fr",
-      link_img: planka,
-    },
-  ];
-  return projects;
-}
-
 export async function fetchArticles() {
   const articles = [
     {
