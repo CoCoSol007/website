@@ -57,10 +57,10 @@ export function fetchProjects() {
 export async function fetchArticles() {
   const articles = [
     {
-      title: "Future projects",
-      description: "A non-exhaustive list of my future projects.",
-      date: "04/28/2024",
-      path: "future-projects",
+      title: "To-Do List",
+      description: "A non-exhaustive To-Do List.",
+      date: "22/07/2024",
+      path: "to-do-list",
     },
     {
       title: "New game project: Beats into shape",
