@@ -1,9 +1,7 @@
 import simple3d from "../assets/renderer.webp";
 import casino_dingo from "../assets/casino_dingo.webp";
 import border_wars from "../assets/border-wars.webp";
-import planka from "../assets/planka.webp";
 import logo from "../assets/logo.svg";
-import upkuma from "../assets/upkuma.svg";
 import beats_into_shapes from "../assets/beats_into_shapes.webp";
 import hexing from "../assets/hexing.webp";
 
@@ -51,7 +49,9 @@ export function fetchProjects() {
       link_img: logo,
     },
   ];
-  return projects;
+
+  // Shuffle projects
+  return projects.sort(() => Math.random() - 0.5);
 }
 
 export async function fetchArticles() {
