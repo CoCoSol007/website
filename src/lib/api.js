@@ -57,6 +57,12 @@ export function fetchProjects() {
 export async function fetchArticles() {
   const articles = [
     {
+      title: "Hexing",
+      description: "A basic Rust library to manipulate hexagonal grids.",
+      date: "05/08/2024",
+      path: "hexing",
+    },
+    {
       title: "To-Do List",
       description: "A non-exhaustive To-Do List.",
       date: "22/07/2024",
