@@ -62,7 +62,7 @@
 
   <h2 class="text-2xl font-semibold mb-2">Main Types</h2>
 
-  <h3 class="text-xl font-semibold mb-2">HexPosition&lt;T&gt;</h3>
+  <h3 class="text-xl font-semibold mb-2" id="HexPosition">HexPosition&lt;T&gt;</h3>
   <p class="mb-4">
     Represents a position in a hexagonal grid with coordinates <code
       class="bg-gray-700 p-1 rounded">T</code
@@ -180,7 +180,7 @@ for line_pos in a.line(b) &#123;
 
   <hr class="mb-4 border-gray-700" />
 
-  <h3 class="text-xl font-semibold mb-2">HexDirection</h3>
+  <h3 class="text-xl font-semibold mb-2" id="HexDirection">HexDirection</h3>
   <p class="mb-4">
     Enum representing the six possible directions in a hexagonal grid.
   </p>
