@@ -62,7 +62,9 @@ import arrow from "../../../assets/arrow.svg";
             <li class="bg-gray-900 px-4 py-2 rounded-lg">Deepen my knowledge of AI and develop an AI project</li>
             <li class="bg-gray-900 px-4 py-2 rounded-lg">Start a physics engine project</li>
             <li class="bg-gray-900 px-4 py-2 rounded-lg">Complete Zak, a playful programming language</li>
-            <li class="bg-gray-900 px-4 py-2 rounded-lg">Enhance my 3D Python renderer</li>
+            <li class="bg-gray-900 px-4 py-2 rounded-lg">
+                Enhance my 3D Python renderer <span class="text-green-500">✔️</span>
+            </li>
             <li class="bg-gray-900 px-4 py-2 rounded-lg">My own Simple Central Processing Unit Architecture</li>
             <li class="bg-gray-900 px-4 py-2 rounded-lg">10 interpreters in 10 languages</li>
             <li class="bg-gray-900 px-4 py-2 rounded-lg">Create my own compiled programming language</li>
