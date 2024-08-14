@@ -10,46 +10,89 @@
   const age = Math.floor((currentDate - birthDate) / (1000 * 60 * 60 * 24 * 365));
   </script>
   
-  <div class="container mx-auto max-w-6xl p-8">
-      <div class="flex flex-row items-center md:items-start gap-2 mb-4">
-          <a href="/blog" class="md:self-start">
-              <img src={arrow} alt="Back to Blog" class="w-full h-full hover:scale-125 transition">
-          </a>
-          <h1 class="text-5xl font-bold text-gray-100">Introducing CoCoSol</h1>
-      </div>
-      <p class="text-xl text-gray-300">Get to know CoCoSol, a passionate young developer.</p>
-  
-      <div class="mt-8 text-gray-700">
-          <div class="mt-4 text-left">
-              <h1 class="text-3xl font-bold mb-2 text-white">Hello World!</h1>
-              <p class="text-lg mb-4 text-white">I'm CoCoSol, a <span id="age">{age}</span>-year-old French programmer eager to learn. I have a passion for coding and mathematics. Currently, I'm a student at Caousou in France, always seeking new challenges.</p>
-              <p class="text-lg text-white">To get in touch with me or ask questions, you can email me at <a href="mailto:contact@cocosol.fr" class="text-blue-500 hover:underline">contact@cocosol.fr</a>.</p>
-          </div>
-          <div class="mt-8">
-              <h2 class="text-3xl font-bold mb-2 text-white">Experience</h2>
-              <p class="text-lg mb-4 text-white">Participated in 3 <a class="hover:underline text-blue-500" href="https://godotwildjam.com/">Game-Jams</a> and <a class="hover:underline text-blue-500" href="https://fsfe.org/activities/yh4f/index.en.html"> Youth Hacking 4 Freedom </a> 2024.</p>
-          </div>
-          <div class="mt-8">
-              <h2 class="text-3xl font-bold mb-2 text-white">Education</h2>
-              <p class="text-lg mb-4 text-white">Currently in 11th grade at Caousou high school in France.</p>
-          </div>
-          <div class="mt-8">
-              <h2 class="text-3xl font-bold mb-2 text-white">Skills</h2>
-              <p class="text-lg mb-4 text-white">Proficient in game development, network development, and teamwork.</p>
-          </div>
-          <div class="mt-8">
-              <h2 class="text-3xl font-bold mb-2 text-white">Languages</h2>
-              <p class="text-lg mb-4 text-white">My main programming languages are Rust, Python and I want to learn more about programming language theory.</p>
-          </div>
-          <div class="mt-8">
-              <h2 class="text-3xl font-bold mb-2 text-white">Interests</h2>
-              <p class="text-lg mb-4 text-white">Passionate about mathematics, physics, and software development.</p>
-          </div>
-  
-          <div class="flex flex-col md:flex-row justify-center mt-4 md:gap-4">
-              <img src="https://raw.githubusercontent.com/cocosol007/github-stats/master/generated/languages.svg#gh-dark-mode-only" alt="" class="mt-4 md:w-1/2">
-              <img src="https://raw.githubusercontent.com/cocosol007/github-stats/master/generated/overview.svg#gh-dark-mode-only" alt="" class="mt-4 md:w-1/2">
-          </div>
-      </div>
+  <br><br><br>
+
+  <div class="flex flex-col items-center justify-center px-4 max-w-screen-xl mx-auto">
+      <h1 class="text-5xl font-bold mb-4 text-gray-100 text-center">Corentin SOLOIS (CoCoSol)</h1>
+      <p class="text-lg text-gray-300 text-center">
+          Age: {age} years
+          <br />
+          Location: Toulouse, France
+          <br />
+          Email: <a href="mailto:contact@cocosol.fr" class="text-blue-500 hover:underline">contact@cocosol.fr</a>
+      </p>
   </div>
+  
+  <main class="p-6 max-w-4xl mx-auto">
+      <h2 class="text-2xl font-semibold mb-2">About Me</h2>
+      <p class="mb-4 text-gray-300">
+          I am a passionate developer with a strong interest in coding and mathematics. Currently, I am a student at Lycée Caousou in Terminale, constantly seeking new challenges and opportunities to expand my skills.
+      </p>
+  
+      <hr class="mb-4 border-gray-700" />
+  
+      <h2 class="text-2xl font-semibold mb-2">Coding Experiences</h2>
+      <ul class="list-disc pl-5 mb-4 text-gray-300">
+          <li>
+              Participated in three Game Jams, achieving 5th place globally in one of them.
+          </li>
+          <li>
+              Took part in the Youth Hacking 4 Freedom 2024 competition.
+          </li>
+          <li>
+            Ranking 6th in the Toulouse Academy for IT.
+          </li>
+      </ul>
+
+      <hr class="mb-4 border-gray-700" />
+
+      <h2 class="text-2xl font-semibold mb-2">Work Experiences</h2>
+      <ul class="list-disc pl-5 mb-4 text-gray-300">
+          <li>
+              Worked for two weeks detasseling corn during a summer job.
+          </li>
+          <li>
+              Spent six weeks as an orderly in a rehabilitation center.
+          </li>
+      </ul>
+  
+      <hr class="mb-4 border-gray-700" />
+  
+      <h2 class="text-2xl font-semibold mb-2">Skills</h2>
+      <p class="mb-4 text-gray-300">
+          My skills include game development, drawing, 3D rendering. I also have experience in network development, IA and enjoy working as part of a team.
+      </p>
+  
+      <hr class="mb-4 border-gray-700" />
+  
+      <h2 class="text-2xl font-semibold mb-2">Programming Languages</h2>
+      <p class="mb-4 text-gray-300">
+          I am proficient in Rust and Python and have a keen interest in learning more about programming language theory.
+      </p>
+  
+      <hr class="mb-4 border-gray-700" />
+  
+      <h2 class="text-2xl font-semibold mb-2">Languages</h2>
+      <p class="mb-4 text-gray-300">
+          I am fluent in French and English, and I have basic knowledge of Esperanto.
+      </p>
+  
+      <hr class="mb-4 border-gray-700" />
+  
+      <h2 class="text-2xl font-semibold mb-2">Interests</h2>
+      <p class="mb-4 text-gray-300">
+            My interests include mathematics, physics, artificial intelligence, game development, and much more.
+      </p>
+  
+      <hr class="mb-4 border-gray-700" />
+  
+      <h2 class="text-2xl font-semibold mb-2">GitHub Stats</h2>
+      <div class="mb-4 text-gray-300">
+          <p>You can view my GitHub statistics through the following links:</p>
+          <div class="flex flex-row  justify-content-center max-w-screen-xl pt-4">
+              <img src="https://raw.githubusercontent.com/cocosol007/github-stats/master/generated/overview.svg#gh-dark-mode-only" alt="GitHub Stats">
+              <img src="https://raw.githubusercontent.com/cocosol007/github-stats/master/generated/languages.svg#gh-dark-mode-only" alt="GitHub Stats">
+            </div>
+      </div>
+  </main>
   
