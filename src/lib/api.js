@@ -57,6 +57,12 @@ export function fetchProjects() {
 export async function fetchArticles() {
   const articles = [
     {
+      title: "My own 3D renderer",
+      description: "It's a simple 3d rederer made in python with pygame and math.",
+      date: "14/08/2024",
+      path: "renderer",
+    },
+    {
       title: "Hexing",
       description: "A basic Rust library to manipulate hexagonal grids.",
       date: "05/08/2024",
