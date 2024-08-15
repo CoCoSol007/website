@@ -21,6 +21,10 @@
     rings and spirals.
   </p>
 
+  <p class="mb-4">
+    The link to the <a href="https://docs.rs/hexing/latest/hexing/" class="text-blue-500 hover:underline">docs</a> or the <a href="https://github.com/CoCoSol007/hexing" class="text-blue-500 hover:underline">repository</a>.
+  </p>
+
   <h2 class="text-2xl font-semibold mb-2">Features</h2>
   <ul class="list-disc pl-5 mb-4">
     <li>
