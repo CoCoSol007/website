@@ -36,10 +36,10 @@ export function fetchProjects() {
       link_img: casino_dingo,
     },
     {
-      title: "Simple 3D renderer",
+      title: "3DViewPy",
       description:
-        "It's a simple 3d rederer made in python with pygame and math",
-      link: "https://github.com/CoCoSol007/simple-3D-renderer",
+        "It's a simple 3D rederer made in python with pygame and math",
+      link: "https://github.com/CoCoSol007/3DViewPy",
       link_img: simple3d,
     },
     {
@@ -58,7 +58,7 @@ export async function fetchArticles() {
   const articles = [
     {
       title: "My own 3D renderer",
-      description: "It's a simple 3d rederer made in python with pygame and math.",
+      description: "How to make your own 3D renderer just with math?",
       date: "14/08/2024",
       path: "renderer",
     },

@@ -3,10 +3,13 @@
     My Own 3D Renderer
   </h1>
 
-  <h1 id="overview" class="text-4xl font-bold text-gray-100 mb-4">Overview</h1>
+  <h1 id="overview" class="text-4xl font-bold text-gray-100 mb-2">Overview</h1>
+  <p class="text-lg text-gray-300 mb-1">
+    This is a basic 3D <strong class="font-bold">renderer</strong> created using <strong class="font-bold">Math</strong>.
+  </p>
+
   <p class="text-lg text-gray-300 mb-4">
-    This is a basic 3D <strong class="font-bold">renderer</strong> created using
-    <strong class="font-bold">Pygame</strong> and <strong class="font-bold">Math</strong>.
+    link to the <a href="https://github.com/CoCoSol007/3DViewPy" class="text-blue-500 hover:underline">repository</a>.
   </p>
 
   <h2 id="basic-usage" class="text-2xl font-semibold text-gray-100 mb-2">
