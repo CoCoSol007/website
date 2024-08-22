@@ -82,7 +82,7 @@ const age = Math.floor((currentDate - birthDate) / (1000 * 60 * 60 * 24 * 365));
                 Although I do not have much experience, I am passionate about development
                 and math. Currently, I am a student at Caousou in France <br /> 
                 and I am always seeking new challenges. <br /> To contact me
-                or ask any questions, please email me at <a class="text-blue-600 dark:text-blue-500 hover:underline" href="mailto://contact@cocosol.fr">contact@cocosol.fr</a><br />
+                or ask any questions, please email me at <a class="text-blue-400 hover:underline" href="mailto://contact@cocosol.fr">contact@cocosol.fr</a><br />
             </p>
         </div>
         <div class="md:w-1/2 relative">
