@@ -1,9 +1,18 @@
 <script>
 import {
     fetchProjects,
+    fetchArticles
 } from "$lib/api.js";
 
+import { onMount } from 'svelte';
+
 let projects = fetchProjects();
+let articles = [];
+
+onMount(async () => {
+    articles = await fetchArticles();
+    articles = articles.slice(0, 2);
+});
 
 import logo from "../assets/logo.svg";
 
@@ -59,6 +68,28 @@ const age = Math.floor((currentDate - birthDate) / (1000 * 60 * 60 * 24 * 365));
             <article class="mb-3 h-2/3 font-normal text-gray-400 text-wrap">
                 {project.description}
             </article>
+        </div>
+    </a>
+    {/each}
+</div>
+
+<!-- Latest Articles section -->
+<h1 class="text-3xl font-bold mx-auto text-center mt-32 text-white">Latest Articles</h1>
+
+<div class="container mx-auto my-8 flex flex-wrap justify-center">
+    {#each articles as article}
+    <a
+        href="blog/{article.path}"
+        class="flex flex-row m-5 w-full lg:w-1/3 px-4 mb-4 duration-300 hover:scale-105 bg-gray-900 p-6 rounded-lg shadow-md border border-gray-700 duration-[600ms]"
+        >
+        <div class="w-full flex flex-col justify-between p-4 leading-normal text-gray-300">
+            <p class="mb-2 text-2xl font-bold tracking-tight text-gray-100">
+                {article.title}
+            </p>
+            <article class="mb-3 font-normal text-gray-400 text-wrap">
+                {article.description}
+            </article>
+            <p class="text-gray-500 text-sm">{article.date}</p>
         </div>
     </a>
     {/each}
