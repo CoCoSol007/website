@@ -57,6 +57,12 @@ export function fetchProjects() {
 export async function fetchArticles() {
   const articles = [
     {
+      title: "Hexing Release v0.3.0 - Layout Feature & More",
+      description: "Announcing the release of Hexing Library v0.3.0 with advanced hexagonal grid management features.",
+      date: "22/08/2024",
+      path: "hexing_v0_3_0",
+    },
+    {
       title: "My own 3D renderer",
       description: "How to make your own 3D renderer just with math?",
       date: "14/08/2024",
