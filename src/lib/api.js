@@ -75,12 +75,6 @@ export async function fetchArticles() {
       path: "hexing",
     },
     {
-      title: "To-Do List",
-      description: "A non-exhaustive To-Do List.",
-      date: "22/07/2024",
-      path: "to-do-list",
-    },
-    {
       title: "New game project: Beats into shape",
       description:
         "A rhythm game where you forge items from the very beginning of the process.",
