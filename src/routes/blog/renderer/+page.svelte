@@ -9,7 +9,7 @@
   </p>
 
   <p class="text-lg text-gray-300 mb-4">
-    link to the <a href="https://github.com/CoCoSol007/3DViewPy" class="text-blue-500 hover:underline">repository</a>.
+    link to the <a href="https://github.com/CoCoSol007/misc/tree/main/3DViewPy" class="text-blue-500 hover:underline">repository</a>.
   </p>
 
   <h2 id="basic-usage" class="text-2xl font-semibold text-gray-100 mb-2">

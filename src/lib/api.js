@@ -1,4 +1,3 @@
-import simple3d from "../assets/renderer.webp";
 import casino_dingo from "../assets/casino_dingo.webp";
 import border_wars from "../assets/border-wars.webp";
 import logo from "../assets/logo.svg";
@@ -34,13 +33,6 @@ export function fetchProjects() {
         "Casino Dingo is a 2D game developed using the Godot engine. ",
       link: "https://github.com/CoCoSol007/casino-dingo",
       link_img: casino_dingo,
-    },
-    {
-      title: "3DViewPy",
-      description:
-        "It's a simple 3D rederer made in python with pygame and math",
-      link: "https://github.com/CoCoSol007/3DViewPy",
-      link_img: simple3d,
     },
     {
       title: "My Website",
