@@ -83,16 +83,5 @@
       <p class="mb-4 text-gray-300">
             My interests include mathematics, physics, artificial intelligence, game development, and much more.
       </p>
-  
-      <hr class="mb-4 border-gray-700" />
-  
-      <h2 class="text-2xl font-semibold mb-2">GitHub Stats</h2>
-      <div class="mb-4 text-gray-300">
-          <p>You can view my GitHub statistics through the following links:</p>
-          <div class="flex flex-row  justify-content-center max-w-screen-xl pt-4">
-              <img src="https://raw.githubusercontent.com/cocosol007/github-stats/master/generated/overview.svg#gh-dark-mode-only" alt="GitHub Stats">
-              <img src="https://raw.githubusercontent.com/cocosol007/github-stats/master/generated/languages.svg#gh-dark-mode-only" alt="GitHub Stats">
-            </div>
-      </div>
   </main>
   
