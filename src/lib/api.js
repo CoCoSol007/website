@@ -3,9 +3,16 @@ import border_wars from "../assets/border-wars.webp";
 import logo from "../assets/logo.svg";
 import beats_into_shapes from "../assets/beats_into_shapes.webp";
 import hexing from "../assets/hexing.webp";
+import solipr from "../assets/solipr.webp";
 
 export function fetchProjects() {
   const projects = [
+    {
+      title: "Solipr",
+      description: "WIP: A rust-based version control system.",
+      link: "https://github.com/solipr/solipr",
+      link_img: solipr,
+    },
     {
       title: "Border Wars",
       description:
@@ -22,8 +29,7 @@ export function fetchProjects() {
     },
     {
       title: "Hexing",
-      description:
-        "A basic Rust library to manipulate hexagonal grids.",
+      description: "A basic Rust library to manipulate hexagonal grids.",
       link: "https://crates.io/crates/hexing",
       link_img: hexing,
     },
@@ -50,7 +56,8 @@ export async function fetchArticles() {
   const articles = [
     {
       title: "Hexing Release v0.3.0 - Layout Feature & More",
-      description: "Announcing the release of Hexing Library v0.3.0 with advanced hexagonal grid management features.",
+      description:
+        "Announcing the release of Hexing Library v0.3.0 with advanced hexagonal grid management features.",
       date: "22/08/2024",
       path: "hexing_v0_3_0",
     },
