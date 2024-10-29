@@ -55,6 +55,12 @@ export function fetchProjects() {
 export async function fetchArticles() {
   const articles = [
     {
+      title: "How does a 3D renderer work?",
+      description: "Find out how the three main stages of the rendering process work.",
+      date: "29/10/2024",
+      path: "renderer_2",
+    },
+    {
       title: "Hexing Release v0.3.0 - Layout Feature & More",
       description:
         "Announcing the release of Hexing Library v0.3.0 with advanced hexagonal grid management features.",
