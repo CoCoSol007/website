@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
 /* latin-ext */
 @font-face {
     font-family: 'Inter Tight';
@@ -22,22 +24,10 @@ body {
     font-family: 'Inter Tight', sans-serif;
 }
 
-@keyframes fadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.animate-fade-in-right {
-    animation: fadeInRight 0.5s ease-out forwards;
-    animation-delay: 500ms;
-    opacity: 0;
+.code {
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 @tailwind base;

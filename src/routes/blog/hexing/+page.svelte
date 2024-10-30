@@ -15,7 +15,7 @@
 
 <main class="p-6 max-w-3xl mx-auto">
   <p class="mb-4">
-    <code class="bg-gray-700 p-1 rounded">hexing</code> is a Rust library designed
+    <code class="code bg-gray-700 p-1 rounded">hexing</code> is a Rust library designed
     for manipulation and calculations on hexagonal grids. It provides tools for working
     with hexagonal positions and directions, as well as iterators for exploring hexagonal
     rings and spirals.
@@ -57,7 +57,7 @@
 
   <h2 class="text-2xl font-semibold mb-2">Number Trait</h2>
   <p class="mb-4">
-    The library uses the <code class="bg-gray-700 p-1 rounded">Number</code> trait
+    The library uses the <code class="code bg-gray-700 p-1 rounded">Number</code> trait
     to allow generic calculations with various numeric types. This trait is implemented
     for several types, including integers and floating-point numbers.
   </p>
@@ -71,12 +71,12 @@
     Represents a position in a hexagonal grid with coordinates <code
       class="bg-gray-700 p-1 rounded">T</code
     >. Coordinates are in axial format
-    <code class="bg-gray-700 p-1 rounded">(x, y)</code>.
+    <code class="code bg-gray-700 p-1 rounded">(x, y)</code>.
   </p>
 
   <div class=" rounded mb-4">
     <h4 class="text-lg font-semibold mb-2">Creation:</h4>
-    <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="language-rust"
+    <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="code language-rust"
         >let pos = HexPosition::new(1, 2);
 let pos2 = HexPosition(3, 4);
 
@@ -88,14 +88,14 @@ let origin = HexPosition::ORIGIN;</code
         href="https://www.redblobgames.com/grids/hexagons/#coordinates"
         class="text-blue-500 hover:underline">HexPosition</a
       >
-      with the given <code class="bg-gray-700 p-1 rounded">q</code> and
-      <code class="bg-gray-700 p-1 rounded">r</code> coordinates in an axial format.
+      with the given <code class="code bg-gray-700 p-1 rounded">q</code> and
+      <code class="code bg-gray-700 p-1 rounded">r</code> coordinates in an axial format.
     </p>
   </div>
 
   <div class="  rounded mb-4">
     <h4 class="text-lg font-semibold mb-2">Conversion to Pixel Coordinates:</h4>
-    <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="language-rust"
+    <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="code language-rust"
         >let pixel_coords = pos.to_pixel_coordinates();
 let pixel_coords2 = HexPosition::from_pixel_coordinates(pixel_coords);</code
       ></pre>
@@ -110,7 +110,7 @@ let pixel_coords2 = HexPosition::from_pixel_coordinates(pixel_coords);</code
 
   <div class="  rounded mb-4">
     <h4 class="text-lg font-semibold mb-2">Distance Calculation:</h4>
-    <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="language-rust"
+    <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="code language-rust"
         >let distance = pos.distance(HexPosition::new(3, 4));</code
       ></pre>
     <p class="mt-2">
@@ -123,7 +123,7 @@ let pixel_coords2 = HexPosition::from_pixel_coordinates(pixel_coords);</code
 
   <div class="  rounded mb-4">
     <h4 class="text-lg font-semibold mb-2">Rotation:</h4>
-    <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="language-rust"
+    <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="code language-rust"
         >let rotated_pos = pos.rotation(2);</code
       ></pre>
     <p class="mt-2">
@@ -133,7 +133,7 @@ let pixel_coords2 = HexPosition::from_pixel_coordinates(pixel_coords);</code
 
   <div class="  rounded mb-4">
     <h4 class="text-lg font-semibold mb-2">Reflection:</h4>
-    <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="language-rust"
+    <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="code language-rust"
         >let reflected_pos = pos.reflect();</code
       ></pre>
     <p class="mt-2">
@@ -143,7 +143,7 @@ let pixel_coords2 = HexPosition::from_pixel_coordinates(pixel_coords);</code
 
   <div class="  rounded mb-4">
     <h4 class="text-lg font-semibold mb-2">Ring Iterators:</h4>
-    <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="language-rust"
+    <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="code language-rust"
         >for ring_pos in pos.ring(2) &#123;
     println!("&#123;:?}", ring_pos);
 }</code
@@ -156,7 +156,7 @@ let pixel_coords2 = HexPosition::from_pixel_coordinates(pixel_coords);</code
 
   <div class="  rounded mb-4">
     <h4 class="text-lg font-semibold mb-2">Spiral Iterators:</h4>
-    <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="language-rust"
+    <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="code language-rust"
         >for spiral_pos in pos.spiral(2) &#123;
     println!("&#123;:?}", spiral_pos);
 }</code
@@ -169,7 +169,7 @@ let pixel_coords2 = HexPosition::from_pixel_coordinates(pixel_coords);</code
 
   <div class="  rounded mb-4">
     <h4 class="text-lg font-semibold mb-2">Line Iterators:</h4>
-    <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="language-rust"
+    <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="code language-rust"
         >let a = HexPosition(0, 0);
 let b = HexPosition(-2, -1);
 for line_pos in a.line(b) &#123;
@@ -192,18 +192,18 @@ for line_pos in a.line(b) &#123;
   <div class="  rounded mb-4">
     <h4 class="text-lg font-semibold mb-2">Available Directions:</h4>
     <ul class="list-disc pl-5 mb-4">
-      <li><code class="bg-gray-700 p-1 rounded">Right</code> (1, 0)</li>
-      <li><code class="bg-gray-700 p-1 rounded">UpRight</code> (1, -1)</li>
-      <li><code class="bg-gray-700 p-1 rounded">UpLeft</code> (0, -1)</li>
-      <li><code class="bg-gray-700 p-1 rounded">Left</code> (-1, 0)</li>
-      <li><code class="bg-gray-700 p-1 rounded">DownLeft</code> (-1, 1)</li>
-      <li><code class="bg-gray-700 p-1 rounded">DownRight</code> (0, 1)</li>
+      <li><code class="code bg-gray-700 p-1 rounded">Right</code> (1, 0)</li>
+      <li><code class="code bg-gray-700 p-1 rounded">UpRight</code> (1, -1)</li>
+      <li><code class="code bg-gray-700 p-1 rounded">UpLeft</code> (0, -1)</li>
+      <li><code class="code bg-gray-700 p-1 rounded">Left</code> (-1, 0)</li>
+      <li><code class="code bg-gray-700 p-1 rounded">DownLeft</code> (-1, 1)</li>
+      <li><code class="code bg-gray-700 p-1 rounded">DownRight</code> (0, 1)</li>
     </ul>
   </div>
 
   <div class=" rounded mb-4">
     <h4 class="text-lg font-semibold mb-2">Convert to Vector:</h4>
-    <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="language-rust"
+    <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="code language-rust"
         >let direction = HexDirection::Right;
 let vector = direction.to_vector();</code
       ></pre>
@@ -216,7 +216,7 @@ let vector = direction.to_vector();</code
       <a href="#HexPosition" class="text-blue-500 hover:underline"
         >HexPosition</a
       >
-      by using the <code class="bg-gray-700 p-1 rounded">to_vector</code> method.
+      by using the <code class="code bg-gray-700 p-1 rounded">to_vector</code> method.
     </p>
   </div>
 
@@ -225,7 +225,7 @@ let vector = direction.to_vector();</code
   <h2 class="text-2xl font-semibold mb-2">Usage Examples</h2>
 
   <h3 class="text-xl font-semibold mb-2">Creating Hexagonal Positions</h3>
-  <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="language-rust"
+  <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="code language-rust"
       >use hexing::HexPosition;
 
 let pos = HexPosition::new(1, 2);
@@ -238,7 +238,7 @@ println!("Origin: &#123;:?}", origin);</code
     ></pre>
 
   <h3 class="text-xl font-semibold mb-2">Conversion to Pixel Coordinates</h3>
-  <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="language-rust"
+  <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="code language-rust"
       >use hexing::HexPosition;
 
 let position = HexPosition::new(1, 0);
@@ -254,7 +254,7 @@ assert!(position == new_position);</code
   <h3 class="text-xl font-semibold mb-2">
     Calculating Distance Between Positions
   </h3>
-  <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="language-rust"
+  <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="code language-rust"
       >use hexing::HexPosition;
 
 let pos1 = HexPosition::new(0, 0);
@@ -264,7 +264,7 @@ println!("Distance: &#123;:?}", dist);</code
     ></pre>
 
   <h3 class="text-xl font-semibold mb-2">Iterating Over Rings and Spirals</h3>
-  <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="language-rust"
+  <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="code language-rust"
       >use hexing::&#123;HexPosition, HexRing, HexSpiral};
 
 let center = HexPosition::new(0, 0);
@@ -283,7 +283,7 @@ for pos in spiral &#123;
     ></pre>
 
   <h3 class="text-xl font-semibold mb-2">Rotation of Hexagonal Position</h3>
-  <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="language-rust"
+  <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="code language-rust"
       >use hexing::HexPosition;
 let rotation = 120;
 let pos = HexPosition::new(1, 2);
@@ -292,7 +292,7 @@ println!("Rotated Position: &#123;:?}", rotated_pos);</code
     ></pre>
 
   <h3 class="text-xl font-semibold mb-2">Reflection of Hexagonal Position</h3>
-  <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="language-rust"
+  <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="code language-rust"
       >use hexing::HexPosition;
 
 let pos = HexPosition::new(1, 2);
@@ -301,7 +301,7 @@ println!("Reflected Position: &#123;:?}", reflected_pos);</code
     ></pre>
 
   <h3 class="text-xl font-semibold mb-2">Line Iterator</h3>
-  <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="language-rust"
+  <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="code language-rust"
       >use hexing::HexPosition;
 
 let start = HexPosition::new(0, 0);
@@ -312,7 +312,7 @@ for pos in start.line(end) &#123;
     ></pre>
 
   <h3 class="text-xl font-semibold mb-2">Using HexDirection</h3>
-  <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="language-rust"
+  <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="code language-rust"
       >use hexing::HexDirection;
 
 let direction = HexDirection::UpRight;
@@ -339,13 +339,13 @@ println!("New Position after moving Right: &#123;:?}", new_position);</code
 
   <h2 class="text-2xl font-semibold mb-2">Installation</h2>
   <div class="  rounded mb-4">
-    <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="language-toml"
+    <pre class="bg-gray-800 rounded my-2 p-2 overflow-x-auto"><code class="code language-toml"
         >[dependencies]
 hexing = "0.2.0"</code
       ></pre>
     <p class="mt-2">
-      Add <code class="bg-gray-700 p-1 rounded">hexing</code> to your
-      <code class="bg-gray-700 p-1 rounded">Cargo.toml</code>.
+      Add <code class="code bg-gray-700 p-1 rounded">hexing</code> to your
+      <code class="code bg-gray-700 p-1 rounded">Cargo.toml</code>.
     </p>
   </div>
 </main>

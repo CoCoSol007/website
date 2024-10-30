@@ -20,7 +20,7 @@
   </p>
 
   <pre class="bg-gray-800 p-4 rounded overflow-x-auto text-gray-100 mb-4">
-<code class="language-python">"""The main file of the 3D renderer"""
+<code class="code language-python">"""The main file of the 3D renderer"""
 
 # Import the renderer module
 from renderer.renderer import Renderer, ViewCamera
@@ -64,7 +64,7 @@ renderer.launch()</code></pre>
   </div>
 
   <pre class="bg-gray-800 p-4 rounded overflow-x-auto text-gray-100 mb-4">
-<code class="language-python"># Init with PYTHAGORE view
+<code class="code language-python"># Init with PYTHAGORE view
 renderer = Renderer(x, y, ViewCamera.PYTHAGORE)
 
 # Init with THALES view
@@ -82,7 +82,7 @@ renderer = Renderer(x, y, ViewCamera.THALES)</code></pre>
   </p>
 
   <p class="text-lg text-gray-300 mb-4">
-    <code class="bg-gray-800 p-1 rounded">
+    <code class="code bg-gray-800 p-1 rounded">
 renderer.new_mesh([(0, 0, 0), (0, 1, 0), (1, 0, 0)])
     </code>
   </p>
@@ -98,7 +98,7 @@ renderer.new_mesh([(0, 0, 0), (0, 1, 0), (1, 0, 0)])
   </p>
 
   <pre class="bg-gray-800 p-4 rounded overflow-x-auto text-gray-100 mb-4">
-<code class="language-python">def square_2d(x, y, width, height):
+<code class="code language-python">def square_2d(x, y, width, height):
     return [
         [(x, y, 0), (x + width, y, 0), (x + width, y + height, 0)],
         [(x, y, 0), (x, y + height, 0), (x + width, y + height, 0)]
@@ -178,7 +178,7 @@ for x in range(0, 10):
     The new 2D projected coordinates are then calculated using the following formulas:
 </p>
 <pre class="bg-gray-800 p-4 rounded overflow-x-auto text-gray-100 mb-4">
-<code class="language-python">new_x = x * dist / z
+<code class="code language-python">new_x = x * dist / z
 new_y = y * dist / z</code></pre>
 <p class="text-lg text-gray-300 mb-4">
     To visualize this process differently, think of it as looking through a pane of glass and drawing what you see on that glass. Your eyes act as the camera, the glass represents the 2D world, and what you observe is in 3D.
@@ -205,13 +205,13 @@ new_y = y * dist / z</code></pre>
     <li><strong class="font-bold">Projecting into 2D</strong>: Normalizing the coordinates to convert them into a 2D view.</li>
   </ul>
   <pre class="bg-gray-800 p-4 rounded overflow-x-auto text-gray-100 mb-4">
-<code class="language-python">new_x = current_x / vector3D_pointToCam
+<code class="code language-python">new_x = current_x / vector3D_pointToCam
 new_y = current_y / vector3D_pointToCam</code></pre>
   <ul class="list-disc list-inside text-lg text-gray-300 mb-4">
     <li><strong class="font-bold">Transforming into Screen Coordinates</strong>: Scaling and centering the coordinates to display them correctly on the screen.</li>
   </ul>
   <pre class="bg-gray-800 p-4 rounded overflow-x-auto text-gray-100 mb-4">
-<code class="language-python">pygame.math.Vector2(new_x * 500 + width / 2, new_y * 500 + height / 2)</code></pre>
+<code class="code language-python">pygame.math.Vector2(new_x * 500 + width / 2, new_y * 500 + height / 2)</code></pre>
   <p class="text-lg text-gray-300 mb-4">
     This 3D rendering method has limitations because it inappropriately uses the Pythagorean theorem to calculate the distance from a 3D point to the camera. By directly projecting these distances to normalize the 2D coordinates, it causes distortions, particularly at the corners of the image. These distortions occur because the method does not account for the perspective effects necessary for realistic projection. As a result, the corners appear stretched or compressed, making the 3D view incorrect and the shapes poorly represented.
   </p>
@@ -223,7 +223,7 @@ new_y = current_y / vector3D_pointToCam</code></pre>
     You now have all the data to understand the global function:
   </p>
   <pre class="bg-gray-800 p-4 rounded overflow-x-auto text-gray-100 mb-4">
-<code class="language-python">def to_2d(camera, width: float, height: float):
+<code class="code language-python">def to_2d(camera, width: float, height: float):
     if camera.view == ViewCamera.THALES:
         dist = -camera.dist
         
@@ -254,7 +254,7 @@ new_y = current_y / vector3D_pointToCam</code></pre>
     Camera Movement
   </h2>
   <p class="text-lg text-gray-300 mb-4">
-    Camera movement is straightforward: you just need to save a 3D position and pass it as an argument to the <code class="bg-gray-800 p-1 rounded">to_2d</code> function. To change the camera's position and update the view, simply modify the 3D point.
+    Camera movement is straightforward: you just need to save a 3D position and pass it as an argument to the <code class="code bg-gray-800 p-1 rounded">to_2d</code> function. To change the camera's position and update the view, simply modify the 3D point.
   </p>
 
   <h2 id="camera-rotation" class="text-2xl font-semibold text-gray-100 mb-2">
@@ -268,11 +268,11 @@ new_y = current_y / vector3D_pointToCam</code></pre>
   <h3 class="text-xl font-semibold text-gray-100 mb-2">Creating Rotation Matrices</h3>
 
   <p class="text-lg text-gray-300 mb-4">
-    The functions <code class="bg-gray-800 p-1 rounded">rotation_matrix_x</code> and <code class="bg-gray-800 p-1 rounded">rotation_matrix_y</code> create matrices to rotate an object around the X and Y axes, respectively. These matrices are 4x4, which is commonly used in 3D transformations to also include translations if necessary.
+    The functions <code class="code bg-gray-800 p-1 rounded">rotation_matrix_x</code> and <code class="code bg-gray-800 p-1 rounded">rotation_matrix_y</code> create matrices to rotate an object around the X and Y axes, respectively. These matrices are 4x4, which is commonly used in 3D transformations to also include translations if necessary.
   </p>
 
   <pre class="bg-gray-800 p-4 rounded overflow-x-auto text-gray-100 mb-4">
-<code class="language-python">def rotation_matrix_x(theta):
+<code class="code language-python">def rotation_matrix_x(theta):
     """Creates a rotation matrix around the X axis."""
     c, s = np.cos(theta), np.sin(theta)
     return np.array([
@@ -297,7 +297,7 @@ new_y = current_y / vector3D_pointToCam</code></pre>
   </p>
 
   <pre class="bg-gray-800 p-4 rounded overflow-x-auto text-gray-100 mb-4">
-<code class="language-python">rotation_matrix = rotation_matrix_y(rotation_y) @ rotation_matrix_x(rotation_x)</code></pre>
+<code class="code language-python">rotation_matrix = rotation_matrix_y(rotation_y) @ rotation_matrix_x(rotation_x)</code></pre>
 
   <p class="text-lg text-gray-300 mb-4">
     Explanation:
@@ -309,7 +309,7 @@ new_y = current_y / vector3D_pointToCam</code></pre>
   <h3 class="text-xl font-semibold text-gray-100 mb-2">Creating the Camera Matrix</h3>
 
   <pre class="bg-gray-800 p-4 rounded overflow-x-auto text-gray-100 mb-4">
-<code class="language-python">camera_position = np.array([camera_x, camera_y, camera_z])
+<code class="code language-python">camera_position = np.array([camera_x, camera_y, camera_z])
 camera_matrix = np.identity(4)
 camera_matrix[:3, 3] = camera_position</code></pre>
 
@@ -320,7 +320,7 @@ camera_matrix[:3, 3] = camera_position</code></pre>
   </p>
 
   <pre class="bg-gray-800 p-4 rounded overflow-x-auto text-gray-100 mb-4">
-<code class="language-python">view_matrix = rotation_matrix.copy()
+<code class="code language-python">view_matrix = rotation_matrix.copy()
 view_matrix[:3, :3] = rotation_matrix[:3, :3]
 view_matrix = view_matrix @ camera_matrix</code></pre>
 
@@ -338,7 +338,7 @@ view_matrix = view_matrix @ camera_matrix</code></pre>
   </p>
 
   <pre class="bg-gray-800 p-4 rounded overflow-x-auto text-gray-100 mb-4">
-<code class="language-python">point_3d = np.array([point_x, point_y, point_z, 1])
+<code class="code language-python">point_3d = np.array([point_x, point_y, point_z, 1])
 transformed_point = view_matrix @ point_3d</code></pre>
 
   <p class="text-lg text-gray-300 mb-4">
@@ -352,7 +352,7 @@ transformed_point = view_matrix @ point_3d</code></pre>
   <h3 class="text-xl font-semibold text-gray-100 mb-2">Rendering the Point</h3>
 
   <p class="text-lg text-gray-300 mb-4">
-    After obtaining the new position of the point based on the camera's rotation, we can project it using the <code class="bg-gray-800 p-1 rounded">to_2d</code> function.
+    After obtaining the new position of the point based on the camera's rotation, we can project it using the <code class="code bg-gray-800 p-1 rounded">to_2d</code> function.
   </p>
 
   <h2 id="limitations-and-improvements" class="text-2xl font-semibold text-gray-100 mb-2">
