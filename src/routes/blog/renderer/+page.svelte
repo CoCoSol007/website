@@ -1,4 +1,4 @@
-<main class="p-6 max-w-4xl mx-auto">
+<main class="p-6 max-w-3xl mx-auto">
   <h1 id="my-own-3d-renderer" class="text-4xl font-bold text-gray-100 mb-4">
     My Own 3D Renderer
   </h1>
@@ -40,12 +40,12 @@ renderer.launch()</code></pre>
   </p>
 
   <div class="flex flex-col md:flex-row md:space-x-4 mx-auto items-center">
-    <div class="flex-1 text-center">
+    <div class="flex-1 text-center max-w-3xl">
       <h3 class="text-xl font-semibold text-gray-100 mb-2">
         Pythagorean view:
       </h3>
       <img
-        class="mt-2 max-w-full h-auto rounded mb-4"
+        class="mt-2 h-auto rounded mb-4"
         src="https://res.craft.do/user/full/9158afb0-cf4f-70e7-4f73-e7b4bccede14/doc/4439b81c-461c-47c4-9ac7-34152aefea9e/207069cb-d01c-416e-b573-4d17b3a05765"
         alt="Pythagorean view"
       />
@@ -56,7 +56,7 @@ renderer.launch()</code></pre>
         Thales view:
       </h3>
       <img
-        class="mt-2 max-w-full h-auto rounded mb-4"
+        class="mt-2 h-auto rounded mb-4"
         src="https://res.craft.do/user/full/9158afb0-cf4f-70e7-4f73-e7b4bccede14/doc/4439b81c-461c-47c4-9ac7-34152aefea9e/74548607-d593-4081-8c3b-03f7cc50804c"
         alt="Thales view"
       />
@@ -148,7 +148,7 @@ for x in range(0, 10):
 </p>
 
 <img
- class="mt-2 max-w-full h-auto rounded mb-4"
+ class="mt-2 h-auto rounded mb-4"
  src="https://res.craft.do/user/full/9158afb0-cf4f-70e7-4f73-e7b4bccede14/doc/4439b81c-461c-47c4-9ac7-34152aefea9e/7db8617d-d92f-4887-a892-add546797c3e"
  alt="Thales view sketch"
 />
@@ -167,7 +167,7 @@ for x in range(0, 10):
 </p>
 
 <img
- class="mt-2 max-w-full h-auto rounded mb-4"
+ class="mt-2 h-auto rounded mb-4"
  src="https://res.craft.do/user/full/9158afb0-cf4f-70e7-4f73-e7b4bccede14/doc/4439b81c-461c-47c4-9ac7-34152aefea9e/444a2be9-6170-4fe3-8518-3a59fa6056f9"
  alt="3D renderer example"
 />
@@ -197,7 +197,7 @@ new_y = y * dist / z</code></pre>
     <li><strong class="font-bold">Calculating the 3D Distance</strong>: Using the Pythagorean theorem to find the distance from a point to the camera.</li>
   </ul>
   <img
-    class="mt-2 max-w-full h-auto rounded mb-4"
+    class="mt-2 h-auto rounded mb-4"
     src="https://res.craft.do/user/full/9158afb0-cf4f-70e7-4f73-e7b4bccede14/doc/4439b81c-461c-47c4-9ac7-34152aefea9e/17898947-0c12-4997-a92b-1a9f7dc7f584"
     alt="3D distance calculation"
   />

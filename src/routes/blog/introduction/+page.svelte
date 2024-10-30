@@ -12,7 +12,7 @@
   
   <br><br><br>
 
-  <div class="flex flex-col items-center justify-center px-4 max-w-screen-xl mx-auto">
+  <div class="flex flex-col items-center justify-center px-4 max-w-3xl mx-auto">
       <h1 class="text-5xl font-bold mb-4 text-gray-100 text-center">Corentin SOLOIS (CoCoSol)</h1>
       <p class="text-lg text-gray-300 text-center">
           Age: {age} years
@@ -23,7 +23,7 @@
       </p>
   </div>
   
-  <main class="p-6 max-w-4xl mx-auto">
+  <main class="p-6 max-w-3xl mx-auto">
       <h2 class="text-2xl font-semibold mb-2">About Me</h2>
       <p class="mb-4 text-gray-300">
           I am a passionate developer with a strong interest in coding and mathematics. Currently, I am a student at Lycée Caousou in Terminale, constantly seeking new challenges and opportunities to expand my skills.
@@ -34,25 +34,16 @@
       <h2 class="text-2xl font-semibold mb-2">Coding Experiences</h2>
       <ul class="list-disc pl-5 mb-4 text-gray-300">
           <li>
-              Participated in three Game Jams, achieving 5th place globally in one of them.
+              Participated in Game Jams, achieving 5th place globally in one of them.
           </li>
           <li>
-              Took part in the Youth Hacking 4 Freedom 2024 competition.
+              Win a price in the Youth Hacking 4 Freedom 2024 competition.
           </li>
           <li>
             Ranking 6th in the Toulouse Academy for IT.
           </li>
-      </ul>
-
-      <hr class="mb-4 border-gray-700" />
-
-      <h2 class="text-2xl font-semibold mb-2">Work Experiences</h2>
-      <ul class="list-disc pl-5 mb-4 text-gray-300">
           <li>
-              Worked for two weeks detasseling corn during a summer job.
-          </li>
-          <li>
-              Spent six weeks as an orderly in a rehabilitation center.
+            AI Foundations issued by IBM-SkillsBuild
           </li>
       </ul>
   
@@ -68,6 +59,7 @@
       <h2 class="text-2xl font-semibold mb-2">Programming Languages</h2>
       <p class="mb-4 text-gray-300">
           I am proficient in Rust and Python and have a keen interest in learning more about programming language theory.
+          I want to learn more about Java, C, Haskell...
       </p>
   
       <hr class="mb-4 border-gray-700" />
@@ -81,7 +73,7 @@
   
       <h2 class="text-2xl font-semibold mb-2">Interests</h2>
       <p class="mb-4 text-gray-300">
-            My interests include mathematics, physics, artificial intelligence, game development, and much more.
+            My interests include mathematics, physics, artificial intelligence, game development, 3D rendering and much more.
       </p>
   </main>
   

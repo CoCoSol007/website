@@ -1,6 +1,6 @@
 <br><br><br>
 
-<div class="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-6 px-4 max-w-screen-xl mx-auto">
+<div class="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-6 px-4 max-w-3xl mx-auto">
     <img src="https://raw.githubusercontent.com/CoCoSol007/hexing/main/logo.png" alt="Logo" class="w-3/4 md:w-1/2 max-w-md">
     <div class="flex flex-col items-center md:items-start text-center md:text-left">
         <h3 class="text-4xl font-bold mb-4 text-gray-100">Hexing</h3>
@@ -13,7 +13,7 @@
 </div>
 
 
-<main class="p-6 max-w-4xl mx-auto">
+<main class="p-6 max-w-3xl mx-auto">
   <p class="mb-4">
     <code class="bg-gray-700 p-1 rounded">hexing</code> is a Rust library designed
     for manipulation and calculations on hexagonal grids. It provides tools for working

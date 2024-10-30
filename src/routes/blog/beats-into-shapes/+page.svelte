@@ -1,5 +1,4 @@
 <script>
-    import arrow from "../../../assets/arrow.svg";
     import image1 from "../../../assets/beats/1.png";
     import image2 from "../../../assets/beats/2.png";
     import image3 from "../../../assets/beats/3.png";
@@ -7,39 +6,37 @@
     import image5 from "../../../assets/beats/5.png";
 </script>
 
-<div class="container mx-auto max-w-6xl p-8">
-    <div class="flex items-center gap-2 mb-4">
-        <a href="/blog">
-            <img src={arrow} alt="Back to Blog" class="w-12 h-12 hover:scale-125 transition">
-        </a>
-        <h1 class="text-5xl font-bold text-gray-100">New game project: Beats into shape</h1>
-    </div>
-    <p class="text-xl text-gray-300">A rhythm game where you forge items from the very beginning of the process.</p>
-    <div class="text-left">
-        <h1 class="text-3xl font-bold mb-4 text-white">Welcome to our submission for YH4F 2024</h1>
-        <p class="text-lg mb-6 text-white">We create a rhythmic adventure where you craft items from start to finish.</p>
+<div class="container mx-auto max-w-3xl p-6 text-gray-200">
+    <div class="mb-8">
+        <h1 class="text-4xl font-extrabold text-white mb-2">New game project: Beats into Shape</h1>
+        <p class="text-xl">A rhythm game where you forge items from the very beginning of the process.</p>
     </div>
     
-    <section class="my-8">
-        <h2 class="text-3xl font-bold mb-4 text-white">Gameplay</h2>
-        <p class="text-lg text-white">You play as a smith in your forge, making objects in rhythm with the music.</p>
-        <p class="text-lg text-white">The game contains 5 levels with each level representing every step to create a nice and flawless metallic object.</p>
-    </section>
-
-    <section class="my-8">
-        <h2 class="text-3xl font-bold mb-4 text-white">The Universe of Beats into Shape</h2>
-        <p class="text-lg text-white">In a world where music and nature intertwine, there exists a hidden valley named Harmony. At the heart of this valley lies the Ethereal Forge, a place of creation where blacksmiths work in harmony with the natural rhythms of music. Eirik, a young blacksmith, inherits this forge and discovers the fulfilling craft of blacksmithing.</p>
+    <div class="mb-12">
+        <h2 class="text-2xl font-semibold mb-2 text-white">Welcome to our submission for YH4F 2024</h2>
+        <p class="text-lg">We create a rhythmic adventure where you craft items from start to finish.</p>
+    </div>
+    
+    <section class="mb-12">
+        <h2 class="text-3xl font-bold mb-4">Gameplay</h2>
+        <p class="text-lg">You play as a smith in your forge, making objects in rhythm with the music.</p>
+        <p class="text-lg">The game contains 5 levels with each level representing every step to create a nice and flawless metallic object.</p>
     </section>
     
-    <section class="my-8">
-        <h2 class="text-3xl font-bold mb-4 text-white">Preview</h2>
-        <div class="grid grid-cols-1 gap-4 mb-4 md:grid-cols-2">    
-            <img src={image1} alt="Preview 1" class="w-full h-auto rounded-tl-xl">
-            <img src={image2} alt="Preview 2" class="w-full h-auto rounded-tr-xl">
-            <img src={image3} alt="Preview 3" class="w-full h-auto">
-            <img src={image4} alt="Preview 4" class="w-full h-auto">
+    <section class="mb-12">
+        <h2 class="text-3xl font-bold mb-4">The Universe of Beats into Shape</h2>
+        <p class="text-lg">In a world where music and nature intertwine, there exists a hidden valley named Harmony. At the heart of this valley lies the Ethereal Forge, a place of creation where blacksmiths work in harmony with the natural rhythms of music. Eirik, a young blacksmith, inherits this forge and discovers the fulfilling craft of blacksmithing.</p>
+    </section>
+    
+    <section class="mb-12">
+        <h2 class="text-3xl font-bold mb-4">Preview</h2>
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 mb-4">    
+            <img src={image1} alt="Preview 1" class="w-full h-auto rounded-xl">
+            <img src={image2} alt="Preview 2" class="w-full h-auto rounded-xl">
+            <img src={image3} alt="Preview 3" class="w-full h-auto rounded-xl">
+            <img src={image4} alt="Preview 4" class="w-full h-auto rounded-xl">
         </div>
-        <img src={image5} alt="Preview 5" class="w-full h-auto rounded-b-xl">
+        <img src={image5} alt="Preview 5" class="w-full h-auto rounded-xl">
     </section>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 justify-start">

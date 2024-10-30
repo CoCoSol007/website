@@ -4,7 +4,7 @@
     import shad from "../../../assets/renderer/shad.png";
 </script>
 
-<main class="p-6 max-w-4xl mx-auto">
+<main class="p-6 max-w-3xl mx-auto">
   <h1 class="text-4xl font-bold text-gray-100 my-4 ">
     How does a 3D renderer work?
   </h1>

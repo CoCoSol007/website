@@ -4,7 +4,7 @@
   import noise from '../../../assets/hexing/noise.png';
 </script>
 
-<main class="p-6 max-w-4xl mx-auto">
+<main class="p-6 max-w-3xl mx-auto">
   <h1 class="text-4xl font-bold mb-8 text-center">
     📦 Release v0.3.0 - Layout Feature & More!
   </h1>
