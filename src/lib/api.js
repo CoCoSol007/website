@@ -10,7 +10,7 @@ export function fetchProjects() {
     {
       title: "Solipr",
       description: "WIP: A rust-based version control system.",
-      link: "https://github.com/solipr/solipr",
+      link: "https://github.com/solipr",
       link_img: solipr,
     },
     {
