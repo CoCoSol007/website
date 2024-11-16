@@ -1,39 +1,4 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-	<meta charset="utf-8" />
-	<link rel="icon" href="/logo.svg" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="Coding with passion, Learning with purpose">
-	<meta name="keywords" content="Rust, Corentin, Solois, Code, Language, Dev, CoCoSol, Coco, Sol, Python, Programming, graphic design, backend developer">
-	<meta name="author" content="CoCoSol">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-		<link href="../_app/immutable/assets/0.BeCLEvy8.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.DkaEyCZz.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/entry.5byAI891.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/runtime.DeXpxtC2.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.Di8Je3gM.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/render.BYlP97Pq.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/events.DIWhEPy3.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/svelte-head.tW1tNO1N.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/disclose-version.CRH15Tq2.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/if.BisBcvcN.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/store.DfdmcQuz.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index-client.D8MQbdRg.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.CxWHOCtw.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/legacy.B7x09vCb.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/logo.3hEPfEw0.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/lifecycle.CCYfEKZ8.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/attributes.CaPm3nup.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/6.Cw4qwBTz.js"><!--[--><meta name="description" content="Learn how to build a basic 3D renderer using math concepts such as Pythagorean and Thales' theorem. This article covers basic usage, mesh creation, camera movement, rotation, and the math behind rendering 3D objects to a 2D plane."><!--]--><title>My Own 3D Renderer</title>
-	<title>CoCoSol</title>
-	<script>document.documentElement.classList.add('js')</script>
-</head>
-
-<body data-sveltekit-preload-data="hover" class="bg-[#0e121c] text-white">
-	<div style="display: contents"><!--[--><!--[--><!----><nav class="fixed w-full z-20 top-0 start-0 border-b border-gray-600 backdrop-blur-2xl bg-gray-900/80"><div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto"><a href="/"><img src="data:image/svg+xml,%3csvg%20width='460'%20height='460'%20viewBox='0%200%20460%20460'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M263.252%20336.736a112.198%20112.198%200%200%200%2056.75-39.498l-13.403-10.179a95.368%2095.368%200%200%201-150.306%202.037l-15.166%207.915a112.196%20112.196%200%200%200%20122.125%2039.725Zm-136.18-64.227a112.194%20112.194%200%200%201%2013.593-110.15%20112.2%20112.2%200%200%201%20180.183.285l-15.137%207.9a95.363%2095.363%200%200%200-103.628-32.158%2095.376%2095.376%200%200%200-66.794%2089.684%2095.362%2095.362%200%200%200%206.332%2035.5l-14.549%208.939Z'%20fill='%23006AEB'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M378.84%20154.938c2.494%204.934%202.508%2011.948-1.595%2021.471-4.082%209.475-11.858%2020.443-23.09%2032.188-19.618%2020.514-48.911%2042.497-84.35%2062.038l3.112%206.506c77.209-42.488%20126.755-96.954%20112.349-125.451-14.723-29.123-90.884-20.542-172.908%2018.565l4.021%206.06c38.432-18.224%2075.28-29.526%20104.615-33.314%2016.117-2.081%2029.56-1.84%2039.611.491%2010.101%202.343%2015.741%206.512%2018.235%2011.446Zm-188.095%2034.465-3.111-6.505c-77.812%2042.571-127.876%2097.403-113.404%20126.03%2014.785%2029.247%2091.536%2020.468%20173.96-19.068l-4.02-6.059c-38.811%2018.519-76.065%2029.994-105.669%2033.816-16.116%202.081-29.559%201.84-39.61-.491-10.101-2.343-15.741-6.512-18.235-11.446-2.494-4.934-2.508-11.948%201.595-21.471%204.082-9.476%2011.858-20.444%2023.09-32.188%2019.812-20.717%2049.491-42.932%2085.404-62.618Z'%20fill='%23006AEB'/%3e%3cpath%20d='m195.456%20168.658%2023.921%2050.018a12%2012%200%200%201-4.543%2015.401l-103.476%2063.58%20107.667-56.19a12%2012%200%200%201%2015.551%204.004l30.656%2046.197-23.921-50.018a12%2012%200%200%201%204.544-15.401l103.475-63.58-107.667%2056.19a12.001%2012.001%200%200%201-15.551-4.004l-30.656-46.197Z'%20fill='%2300AAB0'/%3e%3c/svg%3e" alt="Logo" class="w-16 h-16 my-auto"></a> <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse mr-4"><a href="/" class="text-xl font-bold text-gray-100 my-auto">CoCoSol</a> <button aria-label="Aria Name" id="navbar-toggle" type="button" class="inline-flex items-center m-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false"><svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"></path></svg></button></div> <div class="items-center justify-between w-full md:flex md:w-auto md:order-1 hidden" id="navbar-sticky"><ul class="flex flex-col md:my-auto md:p-0 m-2 font-medium border rounded-lg md:space-x-4 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 border-gray-700"><li><button class="block py-2 px-3 text-gray-300 rounded md:hover:bg-transparent md:hover:text-blue-500 md:hover:underline md:p-0 transition ease-in-out">Home</button></li> <li><button class="block py-2 px-3 text-gray-300 rounded md:hover:bg-transparent md:hover:text-blue-500 md:hover:underline md:p-0 transition ease-in-out">Blog</button></li> <li><a href="https://github.com/cocosol007" class="block py-2 px-3 text-gray-300 rounded md:hover:bg-transparent md:hover:text-blue-500 md:hover:underline md:p-0 transition ease-in-out" target="_blank">GitHub</a></li></ul></div></div></nav> <br> <br> <!----><!----><main class="p-6 max-w-3xl mx-auto"><h1 id="my-own-3d-renderer" class="text-4xl font-bold text-gray-100 mb-4">My Own 3D Renderer</h1> <h1 id="overview" class="text-4xl font-bold text-gray-100 mb-2">Overview</h1> <p class="text-lg text-gray-300 mb-1">This is a basic 3D <strong class="font-bold">renderer</strong> created using <strong class="font-bold">Math</strong>.</p> <p class="text-lg text-gray-300 mb-4">link to the <a href="https://github.com/CoCoSol007/misc/tree/main/3DViewPy" class="text-blue-500 hover:underline">repository</a>.</p> <h2 id="basic-usage" class="text-2xl font-semibold text-gray-100 mb-2">Basic usage</h2> <p class="text-lg text-gray-300 mb-4">The basic use of my rendering engine:</p> <pre class="bg-gray-800 p-4 rounded overflow-x-auto text-gray-100 mb-4">
+import{t as a,a as t}from"../chunks/disclose-version.CRH15Tq2.js";import"../chunks/legacy.B7x09vCb.js";import{$ as i}from"../chunks/runtime.DeXpxtC2.js";import{h as l}from"../chunks/svelte-head.tW1tNO1N.js";import{a as e}from"../chunks/attributes.CaPm3nup.js";const c=""+new URL("../assets/thal.BuX4MOe8.png",import.meta.url).href,d=""+new URL("../assets/pyth.DGBe7L1F.png",import.meta.url).href,h=""+new URL("../assets/conv.C7If6J2v.png",import.meta.url).href,m=""+new URL("../assets/conv3D.CdpsyQra.png",import.meta.url).href,g=""+new URL("../assets/dist.Dr7VrFg8.png",import.meta.url).href,p=""+new URL("../assets/example.DYCxmRux.mp4",import.meta.url).href;var x=a(`<meta name="description" content="Learn how to build a basic 3D renderer using math concepts such as Pythagorean and Thales' theorem. This article covers basic usage, mesh creation, camera movement, rotation, and the math behind rendering 3D objects to a 2D plane.">`),u=a(`<main class="p-6 max-w-3xl mx-auto"><h1 id="my-own-3d-renderer" class="text-4xl font-bold text-gray-100 mb-4">My Own 3D Renderer</h1> <h1 id="overview" class="text-4xl font-bold text-gray-100 mb-2">Overview</h1> <p class="text-lg text-gray-300 mb-1">This is a basic 3D <strong class="font-bold">renderer</strong> created using <strong class="font-bold">Math</strong>.</p> <p class="text-lg text-gray-300 mb-4">link to the <a href="https://github.com/CoCoSol007/misc/tree/main/3DViewPy" class="text-blue-500 hover:underline">repository</a>.</p> <h2 id="basic-usage" class="text-2xl font-semibold text-gray-100 mb-2">Basic usage</h2> <p class="text-lg text-gray-300 mb-4">The basic use of my rendering engine:</p> <pre class="bg-gray-800 p-4 rounded overflow-x-auto text-gray-100 mb-4">
 <code class="code language-python">"""The main file of the 3D renderer"""
 
 # Import the renderer module
@@ -47,7 +12,7 @@ renderer.new_mesh([ (0, 0, 0), (0, 1, 0), (1, 0, 0) ])
 renderer.new_mesh([ (0, 0, 0), (0, 1, 0), (0, 0, 1) ])
 
 # Launch the renderer
-renderer.launch()</code></pre> <p class="text-lg text-gray-300 mb-4">I can show you just 2 pictures and the difference between the two views:</p> <div class="flex flex-col md:flex-row md:space-x-4 mx-auto items-center"><div class="flex-1 text-center max-w-3xl"><h3 class="text-xl font-semibold text-gray-100 mb-2">Pythagorean view:</h3> <img class="mt-2 h-auto rounded mb-4" src="/_app/immutable/assets/pyth.DGBe7L1F.png" alt="Pythagorean view"></div> <div class="flex-1 text-center mt-4 md:mt-0"><h3 class="text-xl font-semibold text-gray-100 mb-2">Thales view:</h3> <img class="mt-2 h-auto rounded mb-4" src="/_app/immutable/assets/thal.BuX4MOe8.png" alt="Thales view"></div></div> <pre class="bg-gray-800 p-4 rounded overflow-x-auto text-gray-100 mb-4">
+renderer.launch()</code></pre> <p class="text-lg text-gray-300 mb-4">I can show you just 2 pictures and the difference between the two views:</p> <div class="flex flex-col md:flex-row md:space-x-4 mx-auto items-center"><div class="flex-1 text-center max-w-3xl"><h3 class="text-xl font-semibold text-gray-100 mb-2">Pythagorean view:</h3> <img class="mt-2 h-auto rounded mb-4"${e("src",d)} alt="Pythagorean view"></div> <div class="flex-1 text-center mt-4 md:mt-0"><h3 class="text-xl font-semibold text-gray-100 mb-2">Thales view:</h3> <img class="mt-2 h-auto rounded mb-4"${e("src",c)} alt="Thales view"></div></div> <pre class="bg-gray-800 p-4 rounded overflow-x-auto text-gray-100 mb-4">
 <code class="code language-python"># Init with PYTHAGORE view
 renderer = Renderer(x, y, ViewCamera.PYTHAGORE)
 
@@ -69,20 +34,20 @@ for x in range(0, 10):
         renderer.new_mesh(meshes[1])</code></pre> <h2 id="movement-and-rotation" class="text-2xl font-semibold text-gray-100 mb-2">Movement and rotation</h2> <p class="text-lg text-gray-300 mb-4">Once the meshes have been added to the renderer, you can execute the main
     file, and the WQSD, ZQSD, or arrow keys can be used to navigate the
     environment. Additionally, a mouse can be utilized to rotate the camera
-    horizontally. For example:</p> <div class="relative mb-4"><video controls class="w-full h-auto rounded-lg shadow-md" alt="example"><track kind="captions"> <source src="/_app/immutable/assets/example.DYCxmRux.mp4" type="video/mp4"> Votre navigateur ne supporte pas la balise vidéo.</video></div> <h1 id="how-it-works-" class="text-4xl font-bold text-gray-100 mb-4">How it works</h1> <h2 id="how-it-works-thales" class="text-2xl font-semibold text-gray-100 mb-2">Renderer</h2> <h3 id="thales" class="text-xl font-semibold text-gray-100 mb-2">Thales</h3> <p class="text-lg text-gray-300 mb-4">When I was younger, a day without internet left me with time to fill. I
+    horizontally. For example:</p> <div class="relative mb-4"><video controls class="w-full h-auto rounded-lg shadow-md" alt="example"><track kind="captions"> <source${e("src",p)} type="video/mp4"> Votre navigateur ne supporte pas la balise vidéo.</video></div> <h1 id="how-it-works-" class="text-4xl font-bold text-gray-100 mb-4">How it works</h1> <h2 id="how-it-works-thales" class="text-2xl font-semibold text-gray-100 mb-2">Renderer</h2> <h3 id="thales" class="text-xl font-semibold text-gray-100 mb-2">Thales</h3> <p class="text-lg text-gray-300 mb-4">When I was younger, a day without internet left me with time to fill. I
     decided to take on the challenge of creating a <strong class="font-bold">simple 3D renderer</strong>. At the time, my knowledge of 3D matrices and vector calculations was
     limited, but I had a solid understanding of the <strong class="font-bold">Pythagorean</strong> and <strong class="font-bold">Thales</strong> theorems from school. After
     some thought, I began sketching ideas on paper to explore how to translate
     3D into 2D. I soon realized that converting 3D to 2D is conceptually similar
     to converting <strong class="font-bold">2D into 1D</strong>. After about an
-    hour of work, my sketch looked like this:</p> <img class="mt-2 h-auto rounded mb-4" src="/_app/immutable/assets/conv.C7If6J2v.png" alt="Thales view sketch"> <p class="text-lg text-gray-300 mb-4">At this point, two important questions arose:</p> <ol class="list-decimal list-inside text-lg text-gray-300 mb-4"><li>What does the dot on the left represent?</li> <li>How do we determine the 1D coordinate?</li></ol> <p class="text-lg text-gray-300 mb-4">For the first question, I assumed the dot represents the 1D camera. As for
+    hour of work, my sketch looked like this:</p> <img class="mt-2 h-auto rounded mb-4"${e("src",h)} alt="Thales view sketch"> <p class="text-lg text-gray-300 mb-4">At this point, two important questions arose:</p> <ol class="list-decimal list-inside text-lg text-gray-300 mb-4"><li>What does the dot on the left represent?</li> <li>How do we determine the 1D coordinate?</li></ol> <p class="text-lg text-gray-300 mb-4">For the first question, I assumed the dot represents the 1D camera. As for
     the second, the answer lies in applying Thales' theorem.</p> <p class="text-lg text-gray-300 mb-4">By repeating this process with a 3D point, you can create a 3D renderer
-    using just two applications of Thales' theorem.</p> <img class="mt-2 h-auto rounded mb-4" src="/_app/immutable/assets/conv3D.CdpsyQra.png" alt="3D renderer example"> <p class="text-lg text-gray-300 mb-4">This method involves four key variables: `x`, `y`, `z`, and `dist`. The
+    using just two applications of Thales' theorem.</p> <img class="mt-2 h-auto rounded mb-4"${e("src",m)} alt="3D renderer example"> <p class="text-lg text-gray-300 mb-4">This method involves four key variables: \`x\`, \`y\`, \`z\`, and \`dist\`. The
     first three represent the coordinates of the point you want to project into
-    2D. The `dist` variable refers to the distance between the camera and the
+    2D. The \`dist\` variable refers to the distance between the camera and the
     projection plane. This distance is a critical parameter in 3D rendering as
     it determines how objects are projected onto a 2D plane from a 3D scene. The
-    larger the `dist` value, the smaller the rendered objects will appear.</p> <p class="text-lg text-gray-300 mb-4">The new 2D projected coordinates are then calculated using the following
+    larger the \`dist\` value, the smaller the rendered objects will appear.</p> <p class="text-lg text-gray-300 mb-4">The new 2D projected coordinates are then calculated using the following
     formulas:</p> <pre class="bg-gray-800 p-4 rounded overflow-x-auto text-gray-100 mb-4">
 <code class="code language-python">new_x = x * dist / z
 new_y = y * dist / z</code></pre> <p class="text-lg text-gray-300 mb-4">To visualize this process differently, think of it as looking through a pane
@@ -96,7 +61,7 @@ new_y = y * dist / z</code></pre> <p class="text-lg text-gray-300 mb-4">To visua
     can be observed in the distortions at the corners. To understand how this
     method works with the Pythagorean theorem, it’s helpful to break down the
     process into clear steps.</p> <ul class="list-disc list-inside text-lg text-gray-300 mb-4"><li><strong class="font-bold">Calculating the 3D Distance</strong>: Using the
-      Pythagorean theorem to find the distance from a point to the camera.</li></ul> <img class="mt-2 h-auto rounded mb-4" src="/_app/immutable/assets/dist.Dr7VrFg8.png" alt="3D distance calculation"> <ul class="list-disc list-inside text-lg text-gray-300 mb-4"><li><strong class="font-bold">Projecting into 2D</strong>: Normalizing the
+      Pythagorean theorem to find the distance from a point to the camera.</li></ul> <img class="mt-2 h-auto rounded mb-4"${e("src",g)} alt="3D distance calculation"> <ul class="list-disc list-inside text-lg text-gray-300 mb-4"><li><strong class="font-bold">Projecting into 2D</strong>: Normalizing the
       coordinates to convert them into a 2D view.</li></ul> <pre class="bg-gray-800 p-4 rounded overflow-x-auto text-gray-100 mb-4">
 <code class="code language-python">new_x = current_x / vector3D_pointToCam
 new_y = current_y / vector3D_pointToCam</code></pre> <ul class="list-disc list-inside text-lg text-gray-300 mb-4"><li><strong class="font-bold">Transforming into Screen Coordinates</strong>:
@@ -175,32 +140,4 @@ transformed_point = view_matrix @ point_3d</code></pre> <p class="text-lg text-g
     providing proper occlusion. Without it, our renderer might display incorrect
     visual results where objects overlap or where the depth relationship between
     objects is not accurately represented.</p> <p class="text-lg text-gray-300 mb-4">In the future, I will address this limitation by studying data about 3D
-    rendering. For example, with this great <a href="https://youtu.be/qSrGbVxCYeo?si=2ufH6zUgWBgM7G5V" class="text-blue-400 hover:underline">documentation video</a>.</p></main><!----><!----> <footer class="py-4"><div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full"><p class="text-white text-center mb-2">© 2024 CoCoSol</p> <div class="text-center"><a href="https://creativecommons.org/licenses/by-nc/4.0/deed.en" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">Licensed under CC BY-NC 4.0 DEED</a></div></div></footer><!----><!--]--> <!--[!--><!--]--><!--]-->
-			
-			<script>
-				{
-					__sveltekit_1anmw4d = {
-						base: new URL("..", location).pathname.slice(0, -1)
-					};
-
-					const element = document.currentScript.parentElement;
-
-					const data = [null,null];
-
-					Promise.all([
-						import("../_app/immutable/entry/start.DkaEyCZz.js"),
-						import("../_app/immutable/entry/app.Di8Je3gM.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 6],
-							data,
-							form: null,
-							error: null
-						});
-					});
-				}
-			</script>
-		</div>
-</body>
-
-</html>
+    rendering. For example, with this great <a href="https://youtu.be/qSrGbVxCYeo?si=2ufH6zUgWBgM7G5V" class="text-blue-400 hover:underline">documentation video</a>.</p></main>`,2);function _(o){var r=u();l(s=>{var n=x();i.title="My Own 3D Renderer",t(s,n)}),t(o,r)}export{_ as component};
