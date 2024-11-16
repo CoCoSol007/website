@@ -55,42 +55,58 @@ export function fetchProjects() {
 export async function fetchArticles() {
   const articles = [
     {
-      title: "How does a 3D renderer work?",
-      description: "Find out how the three main stages of the rendering process work.",
-      date: "29/10/2024",
-      path: "renderer_2",
-    },
-    {
-      title: "Hexing Release v0.3.0 - Layout Feature & More",
+      title: "Understanding 3D Rendering",
+      subtitle: "An Overview of the Three Main Stages of Rendering",
       description:
-        "Announcing the release of Hexing Library v0.3.0 with advanced hexagonal grid management features.",
-      date: "22/08/2024",
-      path: "hexing_v0_3_0",
+        "Explore how a 3D renderer processes and generates images in three key steps.",
+      date: "2024-10-29",
+      path: "3d-rendering-overview",
+      tags: ["3D Rendering", "Computer Graphics", "Tutorial"],
     },
     {
-      title: "My own 3D renderer",
-      description: "How to make your own 3D renderer just with math?",
-      date: "14/08/2024",
-      path: "renderer",
-    },
-    {
-      title: "Hexing",
-      description: "A basic Rust library to manipulate hexagonal grids.",
-      date: "05/08/2024",
-      path: "hexing",
-    },
-    {
-      title: "New game project: Beats into shape",
+      title: "Hexing Library v0.3.0 Released",
+      subtitle: "New Layout Features and Enhancements",
       description:
-        "A rhythm game where you forge items from the very beginning of the process.",
-      date: "04/22/2024",
+        "Discover the new features in Hexing v0.3.0, including advanced hexagonal grid management.",
+      date: "2024-08-22",
+      path: "hexing-v0-3-0",
+      tags: ["Hexagonal Grids", "Rust", "Library Updates"],
+    },
+    {
+      title: "Building Your Own 3D Renderer",
+      subtitle: "A Mathematical Approach to 3D Rendering",
+      description:
+        "Learn how to create a 3D renderer from scratch using mathematical concepts.",
+      date: "2024-08-14",
+      path: "build-3d-renderer",
+      tags: ["3D Rendering", "Math", "Programming", "Tutorial"],
+    },
+    {
+      title: "Introduction to Hexing",
+      subtitle: "A Rust Library for Hexagonal Grid Manipulation",
+      description:
+        "Learn about Hexing, a basic Rust library for working with hexagonal grids.",
+      date: "2024-08-05",
+      path: "hexing-introduction",
+      tags: ["Hexagonal Grids", "Rust", "Open Source", "Library"],
+    },
+    {
+      title: "Beats into Shapes: A New Game Project",
+      subtitle: "A Rhythm Game with a Unique Forging Mechanic",
+      description:
+        "Introducing Beats into Shapes, a rhythm game where you forge items from raw materials.",
+      date: "2024-04-22",
       path: "beats-into-shapes",
+      tags: ["Game Development", "Rhythm Game", "Creative Projects"],
     },
     {
       title: "Introducing CoCoSol",
-      description: "Get to know CoCoSol, a passionate young developer.",
-      date: "04/19/2024",
+      subtitle: "A Passionate Young Developer",
+      description:
+        "Get to know CoCoSol, developer with a creative approach to coding.",
+      date: "2024-04-19",
       path: "introduction",
+      tags: ["Introduction", "Personal Blog"],
     },
   ];
 
