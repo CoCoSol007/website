@@ -14,11 +14,10 @@ export function fetchProjects() {
       link_img: solipr,
     },
     {
-      title: "Border Wars",
-      description:
-        "Border Wars is a turn-based online strategy game made with rust and bevy.",
-      link: "https://github.com/CoCoSol007/border-wars",
-      link_img: border_wars,
+      title: "Hexing",
+      description: "A basic Rust library to manipulate hexagonal grids.",
+      link: "https://crates.io/crates/hexing",
+      link_img: hexing,
     },
     {
       title: "Beats into shapes",
@@ -28,10 +27,11 @@ export function fetchProjects() {
       link_img: beats_into_shapes,
     },
     {
-      title: "Hexing",
-      description: "A basic Rust library to manipulate hexagonal grids.",
-      link: "https://crates.io/crates/hexing",
-      link_img: hexing,
+      title: "Border Wars",
+      description:
+        "Border Wars is a turn-based online strategy game made with rust and bevy.",
+      link: "https://github.com/CoCoSol007/border-wars",
+      link_img: border_wars,
     },
     {
       title: "Casino Dingo",
@@ -48,8 +48,7 @@ export function fetchProjects() {
     },
   ];
 
-  // Shuffle projects
-  return projects.sort(() => Math.random() - 0.5);
+  return projects;
 }
 
 export async function fetchArticles() {
