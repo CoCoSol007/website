@@ -140,4 +140,4 @@ transformed_point = view_matrix @ point_3d</code></pre> <p class="text-lg text-g
     providing proper occlusion. Without it, our renderer might display incorrect
     visual results where objects overlap or where the depth relationship between
     objects is not accurately represented.</p> <p class="text-lg text-gray-300 mb-4">In the future, I will address this limitation by studying data about 3D
-    rendering. For example, with this great <a href="https://youtu.be/qSrGbVxCYeo?si=2ufH6zUgWBgM7G5V" class="text-blue-400 hover:underline">documentation video</a>.</p></main>`,2);function _(o){var r=u();l(s=>{var n=x();i.title="My Own 3D Renderer",t(s,n)}),t(o,r)}export{_ as component};
+    rendering. For example, with this great <a href="https://youtu.be/qSrGbVxCYeo?si=2ufH6zUgWBgM7G5V" class="text-blue-500 hover:underline">documentation video</a>.</p></main>`,2);function _(o){var r=u();l(s=>{var n=x();i.title="My Own 3D Renderer",t(s,n)}),t(o,r)}export{_ as component};
