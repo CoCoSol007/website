@@ -6,16 +6,15 @@
 	<link rel="icon" href="/logo.svg" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<meta name="description" content="Coding with passion, Learning with purpose">
-	<meta name="keywords"
-		content="Rust, Corentin, Solois, Code, Language, Dev, CoCoSol, Coco, Sol, Python, Programming, graphic design, backend developer">
+	<meta name="keywords" content="Rust, Corentin, Solois, Code, Language, Dev, CoCoSol, Coco, Sol, Python, Programming, graphic design, backend developer">
 	<meta name="author" content="CoCoSol">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
-		<link href="../_app/immutable/assets/0.CDTzFDqC.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.DBzH5IKL.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/entry.EUYQTWfm.js">
+		<link href="../_app/immutable/assets/0.BeCLEvy8.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.DhUvOZhO.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.cOHPIvaP.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/runtime.DeXpxtC2.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.DAvPr4G5.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.CFgV0PDF.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/render.BYlP97Pq.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/events.DIWhEPy3.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/svelte-head.tW1tNO1N.js">
@@ -23,25 +22,25 @@
 		<link rel="modulepreload" href="../_app/immutable/chunks/if.BisBcvcN.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/store.DfdmcQuz.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index-client.D8MQbdRg.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.pEuwZwds.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.CxWHOCtw.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/legacy.B7x09vCb.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/logo.3hEPfEw0.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/lifecycle.CCYfEKZ8.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/attributes.CaPm3nup.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/4.BljQP2km.js"><!--[--><meta name="description" content="Learn how 3D rendering works, covering the key steps of Vertex Shading, Rasterisation, and Fragment Shading in the rendering pipeline."><!--]--><title>How does a 3D renderer work?</title>
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.DMrOHIvu.js"><!--[--><meta name="description" content="Learn how 3D rendering works, covering the key steps of Vertex Shading, Rasterisation, and Fragment Shading in the rendering pipeline."><!--]--><title>How does a 3D renderer work?</title>
 	<title>CoCoSol</title>
 	<script>document.documentElement.classList.add('js')</script>
 </head>
 
-<body data-sveltekit-preload-data="hover" class="frappe text-text bg-surface0">
-	<div style="display: contents"><!--[--><!--[--><!----><nav class="fixed w-full z-20 top-0 start-0 backdrop-blur-2xl bg-base/80"><div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto"><a href="/"><img src="data:image/svg+xml,%3csvg%20width='460'%20height='460'%20viewBox='0%200%20460%20460'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M263.252%20336.736a112.198%20112.198%200%200%200%2056.75-39.498l-13.403-10.179a95.368%2095.368%200%200%201-150.306%202.037l-15.166%207.915a112.196%20112.196%200%200%200%20122.125%2039.725Zm-136.18-64.227a112.194%20112.194%200%200%201%2013.593-110.15%20112.2%20112.2%200%200%201%20180.183.285l-15.137%207.9a95.363%2095.363%200%200%200-103.628-32.158%2095.376%2095.376%200%200%200-66.794%2089.684%2095.362%2095.362%200%200%200%206.332%2035.5l-14.549%208.939Z'%20fill='%23006AEB'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M378.84%20154.938c2.494%204.934%202.508%2011.948-1.595%2021.471-4.082%209.475-11.858%2020.443-23.09%2032.188-19.618%2020.514-48.911%2042.497-84.35%2062.038l3.112%206.506c77.209-42.488%20126.755-96.954%20112.349-125.451-14.723-29.123-90.884-20.542-172.908%2018.565l4.021%206.06c38.432-18.224%2075.28-29.526%20104.615-33.314%2016.117-2.081%2029.56-1.84%2039.611.491%2010.101%202.343%2015.741%206.512%2018.235%2011.446Zm-188.095%2034.465-3.111-6.505c-77.812%2042.571-127.876%2097.403-113.404%20126.03%2014.785%2029.247%2091.536%2020.468%20173.96-19.068l-4.02-6.059c-38.811%2018.519-76.065%2029.994-105.669%2033.816-16.116%202.081-29.559%201.84-39.61-.491-10.101-2.343-15.741-6.512-18.235-11.446-2.494-4.934-2.508-11.948%201.595-21.471%204.082-9.476%2011.858-20.444%2023.09-32.188%2019.812-20.717%2049.491-42.932%2085.404-62.618Z'%20fill='%23006AEB'/%3e%3cpath%20d='m195.456%20168.658%2023.921%2050.018a12%2012%200%200%201-4.543%2015.401l-103.476%2063.58%20107.667-56.19a12%2012%200%200%201%2015.551%204.004l30.656%2046.197-23.921-50.018a12%2012%200%200%201%204.544-15.401l103.475-63.58-107.667%2056.19a12.001%2012.001%200%200%201-15.551-4.004l-30.656-46.197Z'%20fill='%2300AAB0'/%3e%3c/svg%3e" alt="Logo" class="w-16 h-16 my-auto"></a> <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse mr-4"><a href="/" class="text-xl font-bold text-text my-auto">CoCoSol</a> <button aria-label="Aria Name" id="navbar-toggle" type="button" class="inline-flex items-center m-2 w-10 h-10 justify-center text-sm text-subtext0 rounded-lg md:hidden hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-subtext1" aria-controls="navbar-sticky" aria-expanded="false"><svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"></path></svg></button></div> <div class="items-center justify-between w-full md:flex md:w-auto md:order-1 hidden" id="navbar-sticky"><ul class="flex flex-col md:my-auto md:p-0 m-2 font-medium border rounded-lg md:space-x-4 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 border-base"><li><button class="block py-2 px-3 text-subtext1 rounded md:hover:bg-transparent md:hover:text-blue md:hover:underline md:p-0 transition ease-in-out">Home</button></li> <li><button class="block py-2 px-3 text-subtext1 rounded md:hover:bg-transparent md:hover:text-blue md:hover:underline md:p-0 transition ease-in-out">Blog</button></li> <li><a href="https://github.com/cocosol007" class="block py-2 px-3 text-subtext1 rounded md:hover:bg-transparent md:hover:text-blue md:hover:underline md:p-0 transition ease-in-out" target="_blank">GitHub</a></li></ul></div></div></nav> <br> <br> <!----><!----><main class="p-6 max-w-3xl mx-auto"><h1 class="text-4xl font-bold text-text my-4">How does a 3D renderer work?</h1> <section class="text-lg text-subtext1 mb-4"><p class="font-semibold">authors : Lucien VILLARD &amp; Corentin SOLOIS</p></section> <h2 id="overview" class="text-2xl font-bold text-text mb-2">Introduction</h2> <p class="text-lg text-subtext1 mb-1">3D is everywhere in our new technology. Think of film (animation, VFX),
+<body data-sveltekit-preload-data="hover" class="bg-[#0e121c] text-white">
+	<div style="display: contents"><!--[--><!--[--><!----><nav class="fixed w-full z-20 top-0 start-0 border-b border-gray-600 backdrop-blur-2xl bg-gray-900/80"><div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto"><a href="/"><img src="data:image/svg+xml,%3csvg%20width='460'%20height='460'%20viewBox='0%200%20460%20460'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M263.252%20336.736a112.198%20112.198%200%200%200%2056.75-39.498l-13.403-10.179a95.368%2095.368%200%200%201-150.306%202.037l-15.166%207.915a112.196%20112.196%200%200%200%20122.125%2039.725Zm-136.18-64.227a112.194%20112.194%200%200%201%2013.593-110.15%20112.2%20112.2%200%200%201%20180.183.285l-15.137%207.9a95.363%2095.363%200%200%200-103.628-32.158%2095.376%2095.376%200%200%200-66.794%2089.684%2095.362%2095.362%200%200%200%206.332%2035.5l-14.549%208.939Z'%20fill='%23006AEB'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M378.84%20154.938c2.494%204.934%202.508%2011.948-1.595%2021.471-4.082%209.475-11.858%2020.443-23.09%2032.188-19.618%2020.514-48.911%2042.497-84.35%2062.038l3.112%206.506c77.209-42.488%20126.755-96.954%20112.349-125.451-14.723-29.123-90.884-20.542-172.908%2018.565l4.021%206.06c38.432-18.224%2075.28-29.526%20104.615-33.314%2016.117-2.081%2029.56-1.84%2039.611.491%2010.101%202.343%2015.741%206.512%2018.235%2011.446Zm-188.095%2034.465-3.111-6.505c-77.812%2042.571-127.876%2097.403-113.404%20126.03%2014.785%2029.247%2091.536%2020.468%20173.96-19.068l-4.02-6.059c-38.811%2018.519-76.065%2029.994-105.669%2033.816-16.116%202.081-29.559%201.84-39.61-.491-10.101-2.343-15.741-6.512-18.235-11.446-2.494-4.934-2.508-11.948%201.595-21.471%204.082-9.476%2011.858-20.444%2023.09-32.188%2019.812-20.717%2049.491-42.932%2085.404-62.618Z'%20fill='%23006AEB'/%3e%3cpath%20d='m195.456%20168.658%2023.921%2050.018a12%2012%200%200%201-4.543%2015.401l-103.476%2063.58%20107.667-56.19a12%2012%200%200%201%2015.551%204.004l30.656%2046.197-23.921-50.018a12%2012%200%200%201%204.544-15.401l103.475-63.58-107.667%2056.19a12.001%2012.001%200%200%201-15.551-4.004l-30.656-46.197Z'%20fill='%2300AAB0'/%3e%3c/svg%3e" alt="Logo" class="w-16 h-16 my-auto"></a> <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse mr-4"><a href="/" class="text-xl font-bold text-gray-100 my-auto">CoCoSol</a> <button aria-label="Aria Name" id="navbar-toggle" type="button" class="inline-flex items-center m-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false"><svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"></path></svg></button></div> <div class="items-center justify-between w-full md:flex md:w-auto md:order-1 hidden" id="navbar-sticky"><ul class="flex flex-col md:my-auto md:p-0 m-2 font-medium border rounded-lg md:space-x-4 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 border-gray-700"><li><button class="block py-2 px-3 text-gray-300 rounded md:hover:bg-transparent md:hover:text-blue-500 md:hover:underline md:p-0 transition ease-in-out">Home</button></li> <li><button class="block py-2 px-3 text-gray-300 rounded md:hover:bg-transparent md:hover:text-blue-500 md:hover:underline md:p-0 transition ease-in-out">Blog</button></li> <li><a href="https://github.com/cocosol007" class="block py-2 px-3 text-gray-300 rounded md:hover:bg-transparent md:hover:text-blue-500 md:hover:underline md:p-0 transition ease-in-out" target="_blank">GitHub</a></li></ul></div></div></nav> <br> <br> <!----><!----><main class="p-6 max-w-3xl mx-auto"><h1 class="text-4xl font-bold text-gray-100 my-4">How does a 3D renderer work?</h1> <section class="text-lg text-gray-300 mb-4"><p class="font-semibold">authors : Lucien VILLARD &amp; Corentin SOLOIS</p></section> <h2 id="overview" class="text-2xl font-bold text-gray-100 mb-2">Introduction</h2> <p class="text-lg text-gray-300 mb-1">3D is everywhere in our new technology. Think of film (animation, VFX),
     video games (virtual reality, 3D animation) and even fields like
     architecture. But have you ever wondered how our computers transform 3D
     models into 2D images on the screen? This process is a sequence of
     algorithms, called the "pipeline", executed by the 3D renderer. This series
     of instructions consists of 3 key steps: Vertex Shading, Rasterisation and
     Fragment Shading. In this article, we will review the 3 key steps to
-    understand the basis of the 3D renderer.</p> <img src="/_app/immutable/assets/intro.CSyXUABa.png" alt="intro" class="w-full"> <h2 id="overview" class="text-2xl font-bold text-text mb-2 mt-8">Vertex Shading</h2> <p class="text-lg text-subtext1 mb-1">First of all, it is very important to understand how 3D models are
+    understand the basis of the 3D renderer.</p> <img src="/_app/immutable/assets/intro.CSyXUABa.png" alt="intro" class="w-full"> <h2 id="overview" class="text-2xl font-bold text-gray-100 mb-2 mt-8">Vertex Shading</h2> <p class="text-lg text-gray-300 mb-1">First of all, it is very important to understand how 3D models are
     represented. It contains a set of triangles and their vertices. Each vertex
     is a point in a 3D space, so it can be represented by x, y and z
     coordinates. The Vertex Shading step consists of transforming each vertex of
@@ -60,7 +59,7 @@
     account the position, rotation and scale of the table in the room. This
     position is then adjusted relative to the camera view, using the camera's
     position, rotation, scale and field of view as factors. Finally, the
-    position is projected onto the 2D screen.</p> <h2 id="overview" class="text-2xl font-bold text-text mb-2 mt-8">Rasterisation</h2> <p class="text-lg text-subtext1 mb-1">To continue, just remember that a screen is a grid of millions of pixels of
+    position is projected onto the 2D screen.</p> <h2 id="overview" class="text-2xl font-bold text-gray-100 mb-2 mt-8">Rasterisation</h2> <p class="text-lg text-gray-300 mb-1">To continue, just remember that a screen is a grid of millions of pixels of
     any colors. For now, our program renders only the points vertex of the
     triangles, which is not very interesting for now. The goal is to fill each
     triangle with the right color in the right place. Thanks to the previous
@@ -71,7 +70,7 @@
     an additional value: its distance from the camera. So, when you draw a
     pixel, you check that the recorded distance is not smaller than the one
     you're about to draw. The closest point is therefore the one that will be
-    displayed on screen.</p> <img src="/_app/immutable/assets/rast.BuaQUlGH.png" alt="Rasterisation" class="w-full"> <h2 id="overview" class="text-2xl font-bold text-text mb-2 mt-8">Fragment Shading</h2> <p class="text-lg text-subtext1 mb-1">After the first two steps, we get a passable rendering, but there's no
+    displayed on screen.</p> <img src="/_app/immutable/assets/rast.BuaQUlGH.png" alt="Rasterisation" class="w-full"> <h2 id="overview" class="text-2xl font-bold text-gray-100 mb-2 mt-8">Fragment Shading</h2> <p class="text-lg text-gray-300 mb-1">After the first two steps, we get a passable rendering, but there's no
     relief or volume to the image. For example, a sphere appears as a simple
     colored circle. To correct this, a third step is added to the pipeline:
     Fragment Shading. With light sources already placed in the environment (sun,
@@ -84,18 +83,18 @@
     quantity of light per cm² reaching the surface (front = light intensity,
     perpendicular = 0). Other calculations are then performed to obtain the best
     possible rendering. For example, each object reacts differently to light,
-    depending on its color, roughness (gloss) or refractive index.</p> <img src="/_app/immutable/assets/shad.UmFbctmw.png" alt="Fragment Shading" class="w-full"> <h2 id="overview" class="text-2xl font-bold text-text mb-2 mt-8">Conclusion</h2> <p class="text-lg text-subtext1 mb-1">This article is just an overview of the world of 3D rendering engines. We
+    depending on its color, roughness (gloss) or refractive index.</p> <img src="/_app/immutable/assets/shad.UmFbctmw.png" alt="Fragment Shading" class="w-full"> <h2 id="overview" class="text-2xl font-bold text-gray-100 mb-2 mt-8">Conclusion</h2> <p class="text-lg text-gray-300 mb-1">This article is just an overview of the world of 3D rendering engines. We
     hope it has inspired you to find out more about this incredibly complex
     field. We could have talked about UV maps, which allow objects to be
     non-monochrome, smooth shading, which gives rounded shapes with fewer
     triangles, normal maps, which create the illusion of more complex
     geometries, or ray tracing, another rendering technology that simulates
     light in a very realistic way. That's why we invite you to learn more about
-    this field.</p> <section class="mt-8"><h2 class="text-2xl font-bold text-text mb-2">Sources</h2> <ul class="text-lg text-subtext1 list-disc ml-6"><li><a href="https://www.youtube.com/watch?v=C8YtdC8mxTU" class="text-blue hover:underline" target="_blank">How do Video Game Graphics Work?</a></li> <li><a href="https://en.wikipedia.org/wiki/Shader#Vertex_shaders" class="text-blue hover:underline" target="_blank">Vertex Shaders</a></li> <li><a href="https://en.wikipedia.org/wiki/Graphics_pipeline" class="text-blue hover:underline" target="_blank">Graphics Pipeline</a></li> <li><a href="https://en.wikipedia.org/wiki/3D_projection" class="text-blue hover:underline" target="_blank">3D projection</a></li> <li><a href="https://en.wikipedia.org/wiki/3D_rendering" class="text-blue hover:underline" target="_blank">3D Rendering</a></li></ul></section></main><!----><!----> <footer class="py-4"><div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full"><p class="text-text text-center mb-2">© 2024 CoCoSol</p> <div class="text-center"><a href="https://creativecommons.org/licenses/by-nc/4.0/deed.en" target="_blank" rel="noopener noreferrer" class="text-blue hover:underline transition-all">Licensed under CC BY-NC 4.0 DEED</a></div></div></footer><!----><!--]--> <!--[!--><!--]--><!--]-->
+    this field.</p> <section class="mt-8"><h2 class="text-2xl font-bold text-gray-100 mb-2">Sources</h2> <ul class="text-lg text-gray-300 list-disc ml-6"><li><a href="https://www.youtube.com/watch?v=C8YtdC8mxTU" class="text-blue-400 hover:underline" target="_blank">How do Video Game Graphics Work?</a></li> <li><a href="https://en.wikipedia.org/wiki/Shader#Vertex_shaders" class="text-blue-400 hover:underline" target="_blank">Vertex Shaders</a></li> <li><a href="https://en.wikipedia.org/wiki/Graphics_pipeline" class="text-blue-400 hover:underline" target="_blank">Graphics Pipeline</a></li> <li><a href="https://en.wikipedia.org/wiki/3D_projection" class="text-blue-400 hover:underline" target="_blank">3D projection</a></li> <li><a href="https://en.wikipedia.org/wiki/3D_rendering" class="text-blue-400 hover:underline" target="_blank">3D Rendering</a></li></ul></section></main><!----><!----> <footer class="py-4"><div class="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center h-full"><p class="text-white text-center mb-2">© 2024 CoCoSol</p> <div class="text-center"><a href="https://creativecommons.org/licenses/by-nc/4.0/deed.en" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">Licensed under CC BY-NC 4.0 DEED</a></div></div></footer><!----><!--]--> <!--[!--><!--]--><!--]-->
 			
 			<script>
 				{
-					__sveltekit_6ip9w3 = {
+					__sveltekit_1dcttge = {
 						base: new URL("..", location).pathname.slice(0, -1)
 					};
 
@@ -104,8 +103,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.DBzH5IKL.js"),
-						import("../_app/immutable/entry/app.DAvPr4G5.js")
+						import("../_app/immutable/entry/start.DhUvOZhO.js"),
+						import("../_app/immutable/entry/app.CFgV0PDF.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 4],
