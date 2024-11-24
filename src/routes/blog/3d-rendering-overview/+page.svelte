@@ -122,35 +122,35 @@
       <li>
         <a
           href="https://www.youtube.com/watch?v=C8YtdC8mxTU"
-          class="text-blue-400 hover:underline"
+          class="text-blue-500 hover:underline"
           target="_blank">How do Video Game Graphics Work?</a
         >
       </li>
       <li>
         <a
           href="https://en.wikipedia.org/wiki/Shader#Vertex_shaders"
-          class="text-blue-400 hover:underline"
+          class="text-blue-500 hover:underline"
           target="_blank">Vertex Shaders</a
         >
       </li>
       <li>
         <a
           href="https://en.wikipedia.org/wiki/Graphics_pipeline"
-          class="text-blue-400 hover:underline"
+          class="text-blue-500 hover:underline"
           target="_blank">Graphics Pipeline</a
         >
       </li>
       <li>
         <a
           href="https://en.wikipedia.org/wiki/3D_projection"
-          class="text-blue-400 hover:underline"
+          class="text-blue-500 hover:underline"
           target="_blank">3D projection</a
         >
       </li>
       <li>
         <a
           href="https://en.wikipedia.org/wiki/3D_rendering"
-          class="text-blue-400 hover:underline"
+          class="text-blue-500 hover:underline"
           target="_blank">3D Rendering</a
         >
       </li>

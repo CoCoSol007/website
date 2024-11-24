@@ -49,7 +49,7 @@
       {#if article.tags && article.tags.length > 0}
         <div class="flex flex-wrap gap-2 mt-3">
           {#each article.tags as tag}
-            <span class="px-2 py-0.5 bg-gray-700 text-gray-300 text-xs rounded">
+            <span class="px-2 py-0.5 bg-gray-800 text-gray-300 text-xs rounded">
               {tag}
             </span>
           {/each}

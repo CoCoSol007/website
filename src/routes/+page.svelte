@@ -87,8 +87,7 @@
 <h1 class="text-3xl font-bold mx-auto text-center mt-32 text-white">
   Latest Articles
 </h1>
-
-<div class="container mx-auto my-8 flex flex-wrap justify-center">
+<div class="container mx-auto mt-8 flex flex-wrap justify-center">
   {#each articles as article}
     <a
       href="blog/{article.path}"
@@ -116,6 +115,7 @@
     </a>
   {/each}
 </div>
+<a href="/blog" class="text-blue-500 text-center block hover:underline">View more articles ...</a>
 
 <!-- About Me section -->
 <section class="pt-10 overflow-hidden md:pt-0 sm:pt-16 2xl:pt-16">
@@ -137,7 +137,7 @@
         and I am always seeking new challenges. <br /> To contact me or ask any
         questions, please email me at
         <a
-          class="text-blue-400 hover:underline"
+          class="text-blue-500 hover:underline"
           href="mailto://contact@cocosol.fr">contact@cocosol.fr</a
         ><br />
       </p>

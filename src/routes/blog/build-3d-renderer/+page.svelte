@@ -492,7 +492,7 @@ transformed_point = view_matrix @ point_3d</code
     In the future, I will address this limitation by studying data about 3D
     rendering. For example, with this great <a
       href="https://youtu.be/qSrGbVxCYeo?si=2ufH6zUgWBgM7G5V"
-      class="text-blue-400 hover:underline">documentation video</a
+      class="text-blue-500 hover:underline">documentation video</a
     >.
   </p>
 </main>

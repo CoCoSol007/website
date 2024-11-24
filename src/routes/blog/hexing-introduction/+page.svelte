@@ -28,7 +28,7 @@
 
 <main class="p-6 max-w-3xl mx-auto">
   <p class="mb-4">
-    <code class="code bg-gray-700 p-1 rounded">hexing</code> is a Rust library designed
+    <code class="code bg-gray-800 p-1 rounded">hexing</code> is a Rust library designed
     for manipulation and calculations on hexagonal grids. It provides tools for working
     with hexagonal positions and directions, as well as iterators for exploring hexagonal
     rings and spirals.
@@ -78,7 +78,7 @@
 
   <h2 class="text-2xl font-semibold mb-2">Number Trait</h2>
   <p class="mb-4">
-    The library uses the <code class="code bg-gray-700 p-1 rounded">Number</code
+    The library uses the <code class="code bg-gray-800 p-1 rounded">Number</code
     > trait to allow generic calculations with various numeric types. This trait
     is implemented for several types, including integers and floating-point numbers.
   </p>
@@ -92,9 +92,9 @@
   </h3>
   <p class="mb-4">
     Represents a position in a hexagonal grid with coordinates <code
-      class="bg-gray-700 p-1 rounded">T</code
+      class="bg-gray-800 p-1 rounded">T</code
     >. Coordinates are in axial format
-    <code class="code bg-gray-700 p-1 rounded">(x, y)</code>.
+    <code class="code bg-gray-800 p-1 rounded">(x, y)</code>.
   </p>
 
   <div class=" rounded mb-4">
@@ -112,8 +112,8 @@ let origin = HexPosition::ORIGIN;</code
         href="https://www.redblobgames.com/grids/hexagons/#coordinates"
         class="text-blue-500 hover:underline">HexPosition</a
       >
-      with the given <code class="code bg-gray-700 p-1 rounded">q</code> and
-      <code class="code bg-gray-700 p-1 rounded">r</code> coordinates in an axial
+      with the given <code class="code bg-gray-800 p-1 rounded">q</code> and
+      <code class="code bg-gray-800 p-1 rounded">r</code> coordinates in an axial
       format.
     </p>
   </div>
@@ -222,15 +222,15 @@ for line_pos in a.line(b) &#123;
   <div class="  rounded mb-4">
     <h4 class="text-lg font-semibold mb-2">Available Directions:</h4>
     <ul class="list-disc pl-5 mb-4">
-      <li><code class="code bg-gray-700 p-1 rounded">Right</code> (1, 0)</li>
-      <li><code class="code bg-gray-700 p-1 rounded">UpRight</code> (1, -1)</li>
-      <li><code class="code bg-gray-700 p-1 rounded">UpLeft</code> (0, -1)</li>
-      <li><code class="code bg-gray-700 p-1 rounded">Left</code> (-1, 0)</li>
+      <li><code class="code bg-gray-800 p-1 rounded">Right</code> (1, 0)</li>
+      <li><code class="code bg-gray-800 p-1 rounded">UpRight</code> (1, -1)</li>
+      <li><code class="code bg-gray-800 p-1 rounded">UpLeft</code> (0, -1)</li>
+      <li><code class="code bg-gray-800 p-1 rounded">Left</code> (-1, 0)</li>
       <li>
-        <code class="code bg-gray-700 p-1 rounded">DownLeft</code> (-1, 1)
+        <code class="code bg-gray-800 p-1 rounded">DownLeft</code> (-1, 1)
       </li>
       <li>
-        <code class="code bg-gray-700 p-1 rounded">DownRight</code> (0, 1)
+        <code class="code bg-gray-800 p-1 rounded">DownRight</code> (0, 1)
       </li>
     </ul>
   </div>
@@ -251,7 +251,7 @@ let vector = direction.to_vector();</code
       <a href="#HexPosition" class="text-blue-500 hover:underline"
         >HexPosition</a
       >
-      by using the <code class="code bg-gray-700 p-1 rounded">to_vector</code> method.
+      by using the <code class="code bg-gray-800 p-1 rounded">to_vector</code> method.
     </p>
   </div>
 
@@ -388,8 +388,8 @@ println!("New Position after moving Right: &#123;:?}", new_position);</code
 hexing = "0.2.0"</code
       ></pre>
     <p class="mt-2">
-      Add <code class="code bg-gray-700 p-1 rounded">hexing</code> to your
-      <code class="code bg-gray-700 p-1 rounded">Cargo.toml</code>.
+      Add <code class="code bg-gray-800 p-1 rounded">hexing</code> to your
+      <code class="code bg-gray-800 p-1 rounded">Cargo.toml</code>.
     </p>
   </div>
 </main>
