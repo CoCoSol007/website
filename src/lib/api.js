@@ -54,6 +54,18 @@ export function fetchProjects() {
 export async function fetchArticles() {
   const articles = [
     {
+      title: "The Algorithms That Shape Our Lives",
+      tags: [
+        "Recommendation Algorithms",
+        "Artificial Intelligence",
+        "Algorithmic Radicalization"
+      ],
+      subtitle: "How algorithms shape our preferences, relationships, and beliefs",
+      description: "This article explains how recommendation algorithms work, the technologies behind them, and their limitations.",
+      path: "recommendation-algorithms",
+      date: "2024-12-14"      
+    },
+    {
       title: "Understanding 3D Rendering",
       subtitle: "An Overview of the Three Main Stages of Rendering",
       description:
