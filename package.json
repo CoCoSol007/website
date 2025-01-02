@@ -6,7 +6,7 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
-		"postbuild": "npx svelte-sitemap --domain https://cocosol.fr"
+		"postbuild": "npx svelte-sitemap --domain https://cocosol.dev"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "3.3.1",
