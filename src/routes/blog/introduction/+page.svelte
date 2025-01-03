@@ -1,12 +1,8 @@
 <script>
-  import arrow from "../../../assets/arrow.svg";
-  // Date de naissance
   const birthDate = new Date("2007-10-29");
 
-  // Date actuelle
   const currentDate = new Date();
 
-  // Calcul de l'âge
   const age = Math.floor(
     (currentDate - birthDate) / (1000 * 60 * 60 * 24 * 365)
   );

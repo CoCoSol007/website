@@ -14,7 +14,6 @@
     window.location.href = path;
   };
 
-  // Close the menu when navigating
   onMount(() => {
     const closeMenuOnNavigation = () => {
       isOpen = false;
