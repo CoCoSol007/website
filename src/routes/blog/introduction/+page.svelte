@@ -28,11 +28,6 @@
     Age: {age} years
     <br />
     Location: Toulouse, France
-    <br />
-    Email:
-    <a href="mailto:contact@cocosol.fr" class="text-blue-500 hover:underline"
-      >contact@cocosol.fr</a
-    >
   </p>
 </div>
 
