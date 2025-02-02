@@ -54,6 +54,16 @@ export function fetchProjects() {
 export async function fetchArticles() {
   const articles = [
     {
+      title: "Structured and intuitive introduction to Zermelo-Fraenkel set theory.",
+      tags: [
+        "Zermelo-Fraenkel", "set theory", "mathematics", "axioms"
+      ],
+      subtitle: "A Deep Dive into the Axioms That Reshape Modern Mathematics",
+      description: "Explore the key axioms of Zermelo-Fraenkel set theory (ZF) and how they form the foundation of modern mathematics, addressing paradoxes and reshaping mathematical logic.",
+      path: "understanding-zermelo-fraenkel-set-theory-intuitive-approach",
+      date: "2025-02-02"
+    },
+    {
       title: "The Algorithms That Shape Our Lives",
       tags: [
         "Recommendation Algorithms",

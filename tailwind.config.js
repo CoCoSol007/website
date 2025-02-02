@@ -5,7 +5,9 @@ export default {
     files: ['./src/**/*.{html,js,svelte,ts}'],
   },  
   theme: {
-    extend: {},
+    extend: { fontFamily: {
+      sans: ['Noto Sans Math', 'sans-serif'],
+    },},
   },
 }
 
