@@ -54,6 +54,16 @@ export function fetchProjects() {
 export async function fetchArticles() {
   const articles = [
     {
+      title: "Greater than infinity?",
+      tags: [
+        "Math", "Set theory", "Infinity"
+      ],
+      subtitle: "Exploring Infinite Sets and Their Paradoxes",
+      description: "An in-depth exploration of infinity through bijections, Hilbert’s Hotel, and Cantor’s diagonal argument, revealing the counter-intuitive nature of infinite sets.",
+      path: "greater-than-infinity",
+      date: "2025-04-01"
+    },
+    {
       title: "Structured and intuitive introduction to Zermelo-Fraenkel set theory.",
       tags: [
         "Zermelo-Fraenkel", "set theory", "mathematics", "axioms"
