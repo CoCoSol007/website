@@ -1,15 +1,21 @@
 import casino_dingo from "../assets/casino_dingo.webp";
 import border_wars from "../assets/border-wars.webp";
-import logo from "../assets/logo.svg";
 import beats_into_shapes from "../assets/beats_into_shapes.webp";
 import hexing from "../assets/hexing.webp";
 import solipr from "../assets/solipr.webp";
+import hyper from "../assets/hyper.svg";
 
 export function fetchProjects() {
   const projects = [
     {
+      title: "Hyper",
+      description: "A Non-Euclidean Rendering Engine",
+      link: "https://github.com/cocosol007/hyper",
+      link_img: hyper,
+    },
+    {
       title: "Solipr",
-      description: "WIP: A rust-based version control system.",
+      description: "Project left: A rust-based version control system.",
       link: "https://github.com/solipr",
       link_img: solipr,
     },
@@ -39,12 +45,6 @@ export function fetchProjects() {
         "Casino Dingo is a 2D game developed using the Godot engine. ",
       link: "https://github.com/CoCoSol007/casino-dingo",
       link_img: casino_dingo,
-    },
-    {
-      title: "My Website",
-      description: "This is the code of the website you a curently looking",
-      link: "https://github.com/CoCoSol007/my-website",
-      link_img: logo,
     },
   ];
 
